@@ -1,10 +1,25 @@
 import logoNavbar from "../assets/logo-pelota.webp";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import menuBars from "../assets/menu-bars.svg";
 import { Link } from "react-router-dom";
 import "../App.css";
-
+import { Links } from "./Links";
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 10) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => {
@@ -12,35 +27,19 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <Link to="/" className="navbar-logo">
         <img src={logoNavbar} alt="logo-dg-football" />
         <p>Football Agency</p>
       </Link>
       <div className={`links-desktop ${isOpen ? "open" : ""}`}>
-        <Link to="/" onClick={toggleOpen}>
-          NOSOTROS
-        </Link>
-
-        <Link to="/" onClick={toggleOpen}>
-          EQUIPO
-        </Link>
-
-        <Link to="/" onClick={toggleOpen}>
-          FILOSOFIA
-        </Link>
-
-        <Link to="/" onClick={toggleOpen}>
-          JUGADORES
-        </Link>
-
-        <Link to="/" onClick={toggleOpen}>
-          TRANSFERENCIAS
-        </Link>
-
-        <Link to="/" onClick={toggleOpen}>
-          CONTACTO
-        </Link>
+        {Links.map((link) => {
+          return (
+            <Link to={link.href} key={link.id}>
+              {link.text}
+            </Link>
+          );
+        })}
       </div>
 
       <div className="menu-bars" onClick={toggleOpen}>

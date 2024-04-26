@@ -6,7 +6,9 @@ import instagramIcon from "../assets/instagram-icon.png";
 import transferMktIcon from "../assets/transfermkt-icon.png";
 import flechaAbajo from "../assets/flecha-abajo.png";
 import logoMonocromoCobre from "../assets/logo-monocromo-cobre.png";
-import andresTabernaImage from "../assets/Andres-Taberna.webp"
+import Teammate from "../components/Teammate";
+import andresTabernaImage from "../assets/Andres-Taberna.webp";
+import { team } from "../components/team";
 
 export default function HomePage() {
   return (
@@ -107,27 +109,14 @@ export default function HomePage() {
         <div className="team-container">
           <h3>NUESTRO EQUIPO</h3>
           <div className="team-grid">
-            <div className="teammate">
-              <Link>
-                <img src={andresTabernaImage} alt="Foto de Andres Taberna" className="teammate-image"/>
-              </Link>
-              <p className="name-teammate">Andres Taberna</p>
-              <p className="cargo-teammate">Cargo</p>
-            </div> 
-            <div className="teammate">
-              <Link>
-                <img src={andresTabernaImage} alt="Foto de Andres Taberna" className="teammate-image"/>
-              </Link>
-              <p className="name-teammate">Andres Taberna</p>
-              <p className="cargo-teammate">Cargo</p>
-            </div>
-            <div className="teammate">
-              <Link>
-                <img src={andresTabernaImage} alt="Foto de Andres Taberna" className="teammate-image"/>
-              </Link>
-              <p className="name-teammate">Andres Taberna</p>
-              <p className="cargo-teammate">Cargo</p>
-            </div>
+            {team.map((teammate) => (
+              <Teammate
+                key={teammate.id}
+                image={andresTabernaImage}
+                name={teammate.name}
+                cargo={teammate.cargo}
+              />
+            ))}
           </div>
         </div>
       </section>

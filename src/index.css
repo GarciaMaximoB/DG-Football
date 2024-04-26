@@ -24,6 +24,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
 }
 
 a{
@@ -42,4 +43,5 @@ a{
     -moz-osx-font-smoothing: grayscale;
     background-color: #0c2340;
     color: white;
+    overflow-x: hidden;
   }
