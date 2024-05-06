@@ -251,6 +251,81 @@
   margin-bottom: 25px;
 }
 
+.footer {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/src/assets/fondo_blur.png);
+  background-size: cover;
+  background-position: 50% 25%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container h3 {
+  font-family: "GothamBook", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #a48371;
+  margin-bottom: 25px;
+}
+
+.footer span.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.footer span.contact-item a {
+  font-family: "GothamLight", sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-left: 20px;
+}
+
+.footer span.contact-item img {
+  width: 35px;
+}
+
+.footer img {
+  width: 100px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-left: -25px;
+  font-family: "GothamLight", sans-serif;
+  font-weight: 300;
+  color: #a48371;
+}
+
+.footer-bottom span{
+  display: flex;
+}
+
+.footer-bottom span a {
+  color: #a48371;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+
+.footer-bottom span {
+  font-family: "GothamLight", sans-serif;
+  font-weight: 300;
+}
+
 @media (min-width: 769px) {
   .menu-bars {
     display: none;
