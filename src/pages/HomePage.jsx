@@ -1,5 +1,5 @@
 import video from "../assets/videoFondo.webm";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import youtubeIcon from "../assets/youtube-icon.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
 import instagramIcon from "../assets/instagram-icon.png";
@@ -23,7 +23,7 @@ export default function HomePage() {
         </div>
 
         <div className="redes">
-          <Link
+          <NavLink
             to="https://www.instagram.com/dgfootball/?hl=es"
             target="_blank"
           >
@@ -32,14 +32,14 @@ export default function HomePage() {
               alt="Instagram-icon"
               className="icon-social"
             />
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="https://www.youtube.com/channel/UCSU4NlK4HVhwj7dizRGPNDg"
             target="_blank"
           >
             <img src={youtubeIcon} alt="Youtube-icon" className="icon-social" />
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="https://www.linkedin.com/company/dgf-agency/"
             target="_blank"
           >
@@ -48,8 +48,8 @@ export default function HomePage() {
               alt="Linkedin-icon"
               className="icon-social"
             />
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="https://www.transfermarkt.com/juan-i-davola-davola-group-football-/beraterfirma/berater/8202"
             target="_blank"
           >
@@ -58,14 +58,14 @@ export default function HomePage() {
               alt="transfermarkt-icon"
               className="icon-social"
             />
-          </Link>
-          <Link className="link-flecha-abajo">
+          </NavLink>
+          <NavLink className="link-flecha-abajo">
             <img
               src={flechaAbajo}
               alt="flecha-abajo"
               className="flecha-abajo-homepage"
             />
-          </Link>
+          </NavLink>
         </div>
       </header>
 
@@ -109,42 +109,101 @@ export default function HomePage() {
         <div className="team-container">
           <h3>NUESTRO EQUIPO</h3>
           <div className="team-grid">
-            {team.map((teammate) => (
-              <Teammate
-                key={teammate.id}
-                image={andresTabernaImage}
-                name={teammate.name}
-                cargo={teammate.cargo}
-              />
-            ))}
+            <div className="row">
+              {team.slice(0, 3).map((teammate) => (
+                <Teammate
+                  key={teammate.id}
+                  image={andresTabernaImage}
+                  name={teammate.name}
+                  cargo={teammate.cargo}
+                />
+              ))}
+            </div>
+            <div className="row">
+              {team.slice(3, 5).map((teammate) => (
+                <Teammate
+                  key={teammate.id}
+                  image={andresTabernaImage}
+                  name={teammate.name}
+                  cargo={teammate.cargo}
+                />
+              ))}
+            </div>
+
           </div>
         </div>
       </section>
 
-
       <section className="filosofia-section">
-            <div className="filosofia-container">
-              <h2>Filosofia</h2>
-              <ul className="keys-list">
-                <li className="key">Tener la reputación como el mayor patrimonio de la empresa</li>
-                <li className="key">Profesionalizamos la representación.</li>
-                <li className="key">Honestidad, Transparencia, Lealtad, Profesionalismo, Juventud.</li>
-                <li className="key">Capacidad de trabajo. Nos dedicamos de manera intensa a nuestro trabajo, entonces el margen de éxito suele ser muy superior.</li>
-                <li className="key">Cantidad limitada de futbolistas a representar, cada jugador va a sentir que es el jugador más importante de la empresa por la manera en que nos ocupamos de él.</li>
-                <li className="key">No nos conformamos con buenos jugadores, buscamos algunas características definidas que los distinguen por sobre el resto</li>
-                <li className="key">Hacemos de nuestros jugadores parte de nuestra empresa y familia.</li>
-                <li className="key">Nos ponemos en la piel del representado. Los derechos de los jugadores son lo primero.</li>
-                <li className="key">Tenemos conformado un grupo de trabajo que les permite a los futbolistas tener absoluta tranquilidad y comodidad maximizando su rendimiento.</li>
-                <li className="key">Buscamos la estabilidad emocional y económica de los futbolistas.</li>
-                <li className="key">Profundo conocimiento del mundo del fútbol desde diferentes ópticas (Jugador, Dirigente, Manager, Representante, Intermediario).</li>
-                <li className="key">Los clubes nos conocen por nuestra distintiva seriedad y profesionalismo, generando relaciones de largo plazo.</li>
-                <li className="key">Excelente relación con clubes y agentes del mundo (Desde 2008 hacemos giras internacionales  anuales ininterrumpidamente)</li>
-                <li className="key">Planificación del futuro de los jugadores (desde que comienzan a trabajar en la empresa estamos planificando su retiro, para que cuando culmine su carrera pueda tener ingresos similares a los de un jugador de primera división o tengan un proyecto laboral encaminado).</li>
-                <li className="key">Hacemos crecer a nivel personal a los jugadores, los capacitamos y educamos.</li>
-                <p>Y por ultimo pero  no por ello menos importante:</p>
-                <li className="key">Representar solamente jugadores que compartan nuestra visión y valores</li>
-              </ul>
-            </div>
+        <div className="filosofia-container">
+          <h2>Filosofia</h2>
+          <ul className="keys-list">
+            <li className="key">
+              Tener la reputación como el mayor patrimonio de la empresa
+            </li>
+            <li className="key">Profesionalizamos la representación.</li>
+            <li className="key">
+              Honestidad, Transparencia, Lealtad, Profesionalismo, Juventud.
+            </li>
+            <li className="key">
+              Capacidad de trabajo. Nos dedicamos de manera intensa a nuestro
+              trabajo, entonces el margen de éxito suele ser muy superior.
+            </li>
+            <li className="key">
+              Cantidad limitada de futbolistas a representar, cada jugador va a
+              sentir que es el jugador más importante de la empresa por la
+              manera en que nos ocupamos de él.
+            </li>
+            <li className="key">
+              No nos conformamos con buenos jugadores, buscamos algunas
+              características definidas que los distinguen por sobre el resto
+            </li>
+            <li className="key">
+              Hacemos de nuestros jugadores parte de nuestra empresa y familia.
+            </li>
+            <li className="key">
+              Nos ponemos en la piel del representado. Los derechos de los
+              jugadores son lo primero.
+            </li>
+            <li className="key">
+              Tenemos conformado un grupo de trabajo que les permite a los
+              futbolistas tener absoluta tranquilidad y comodidad maximizando su
+              rendimiento.
+            </li>
+            <li className="key">
+              Buscamos la estabilidad emocional y económica de los futbolistas.
+            </li>
+            <li className="key">
+              Profundo conocimiento del mundo del fútbol desde diferentes
+              ópticas (Jugador, Dirigente, Manager, Representante,
+              Intermediario).
+            </li>
+            <li className="key">
+              Los clubes nos conocen por nuestra distintiva seriedad y
+              profesionalismo, generando relaciones de largo plazo.
+            </li>
+            <li className="key">
+              Excelente relación con clubes y agentes del mundo (Desde 2008
+              hacemos giras internacionales anuales ininterrumpidamente)
+            </li>
+            <li className="key">
+              Planificación del futuro de los jugadores (desde que comienzan a
+              trabajar en la empresa estamos planificando su retiro, para que
+              cuando culmine su carrera pueda tener ingresos similares a los de
+              un jugador de primera división o tengan un proyecto laboral
+              encaminado).
+            </li>
+            <li className="key">
+              Hacemos crecer a nivel personal a los jugadores, los capacitamos y
+              educamos.
+            </li>
+            <p>Y por ultimo pero no por ello menos importante:</p>
+            <li className="key">
+              Representar solamente jugadores que compartan nuestra visión y
+              valores
+            </li>
+          </ul>
+        </div>
       </section>
     </>
   );

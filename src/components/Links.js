@@ -7,7 +7,7 @@ export const Links = [
     {
         id:2,
         text: "EQUIPO",
-        href: "/equipo"
+        href: "/#equipo"
     },
     {
         id:3,

@@ -172,10 +172,16 @@
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 50px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 75px;
+}
+
+.team-grid .row{
+  display: flex;
+  gap: 100px;
 }
 
 .teammate {
@@ -191,7 +197,7 @@
 }
 
 .teammate-image {
-  width: 300px;
+  width: 275px;
   border-radius: 50%;
 }
 
