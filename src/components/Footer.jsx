@@ -13,7 +13,7 @@ export default function Footer() {
         </span>
         <span className="contact-item">
           <img src={phoneIcon} alt="mail icon" />
-          <a>contacto@dgfootball.com</a>
+          <a href="tel:+5491126952420">+54 9 11 2695-2420</a>
         </span>
       </div>
       <div className="footer-bottom">
