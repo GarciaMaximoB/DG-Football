@@ -17,7 +17,7 @@ export const Links = [
     {
         id:4,
         text: "JUGADORES",
-        href: "/"
+        href: "/players"
     },
     {
         id:5,

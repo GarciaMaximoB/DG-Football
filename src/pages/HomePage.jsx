@@ -1,5 +1,5 @@
 import video from "../assets/videoFondo.webm";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import youtubeIcon from "../assets/youtube-icon.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
 import instagramIcon from "../assets/instagram-icon.png";
@@ -23,7 +23,7 @@ export default function HomePage() {
         </div>
 
         <div className="redes">
-          <NavLink
+          <Link
             to="https://www.instagram.com/dgfootball/?hl=es"
             target="_blank"
           >
@@ -32,14 +32,14 @@ export default function HomePage() {
               alt="Instagram-icon"
               className="icon-social"
             />
-          </NavLink>
-          <NavLink
+          </Link>
+          <Link
             to="https://www.youtube.com/channel/UCSU4NlK4HVhwj7dizRGPNDg"
             target="_blank"
           >
             <img src={youtubeIcon} alt="Youtube-icon" className="icon-social" />
-          </NavLink>
-          <NavLink
+          </Link>
+          <Link
             to="https://www.linkedin.com/company/dgf-agency/"
             target="_blank"
           >
@@ -48,8 +48,8 @@ export default function HomePage() {
               alt="Linkedin-icon"
               className="icon-social"
             />
-          </NavLink>
-          <NavLink
+          </Link>
+          <Link
             to="https://www.transfermarkt.com/juan-i-davola-davola-group-football-/beraterfirma/berater/8202"
             target="_blank"
           >
@@ -58,14 +58,14 @@ export default function HomePage() {
               alt="transfermarkt-icon"
               className="icon-social"
             />
-          </NavLink>
-          <NavLink className="link-flecha-abajo">
+          </Link>
+          <Link className="link-flecha-abajo">
             <img
               src={flechaAbajo}
               alt="flecha-abajo"
               className="flecha-abajo-homepage"
             />
-          </NavLink>
+          </Link>
         </div>
       </header>
 
@@ -119,7 +119,7 @@ export default function HomePage() {
                 />
               ))}
             </div>
-            <div className="row">
+            <div className="row row2">
               {team.slice(3, 5).map((teammate) => (
                 <Teammate
                   key={teammate.id}
@@ -129,7 +129,6 @@ export default function HomePage() {
                 />
               ))}
             </div>
-
           </div>
         </div>
       </section>

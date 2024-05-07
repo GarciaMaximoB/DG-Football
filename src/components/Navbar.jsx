@@ -1,7 +1,7 @@
 import logoNavbar from "../assets/logo-pelota.webp";
 import { useState, useEffect } from "react";
 import menuBars from "../assets/menu-bars.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../App.css";
 import { Links } from "./Links";
 export default function Navbar() {
@@ -28,16 +28,16 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-      <Link to="/" className="navbar-logo">
+      <NavLink to="/" className="navbar-logo">
         <img src={logoNavbar} alt="logo-dg-football" />
         <p>Football Agency</p>
-      </Link>
+      </NavLink>
       <div className={`links-desktop ${isOpen ? "open" : ""}`}>
         {Links.map((link) => {
           return (
-            <Link to={link.href} key={link.id}>
+            <NavLink to={link.href} key={link.id}>
               {link.text}
-            </Link>
+            </NavLink>
           );
         })}
       </div>

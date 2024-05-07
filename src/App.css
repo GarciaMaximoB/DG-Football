@@ -184,6 +184,10 @@
   gap: 100px;
 }
 
+.team-grid .row2{
+  gap: 150px;
+}
+
 .teammate {
   display: flex;
   flex-direction: column;
