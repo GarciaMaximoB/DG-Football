@@ -1,5 +1,5 @@
 // import Swiper core and required modules
-import { Navigation, Pagination, A11y, EffectCards } from "swiper/modules";
+import { Navigation, Pagination, A11y, EffectCoverflow } from "swiper/modules";
 import { Players } from "./Players";
 import imagePlayer from "../assets/Player-image.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,23 +9,30 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "swiper/css/effect-cards";
+import "swiper/css/effect-coverflow";
 
 export default function SliderPlayers() {
   return (
     <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, A11y, EffectCards]}
-      spaceBetween={50}
+      className="myCustomSwiper"
+      modules={[Navigation, Pagination, A11y, EffectCoverflow]}
+      speed={500}
+      spaceBetween={100}
       slidesPerView={3}
       navigation
-      pagination={{ clickable: true }}
-      //   effect="cards"
+      effect="coverflow"
+      coverflowEffect={{
+        rotate: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      }}
+      loop={true}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
     >
       {Players.map((player, index) => (
-        <SwiperSlide key={player} virtualIndex={index}>
+        <SwiperSlide key={index} virtualIndex={index}>
           <img src={imagePlayer} alt="" />
           <p>{player.name}</p>
         </SwiperSlide>
