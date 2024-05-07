@@ -1,7 +1,6 @@
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y, EffectCoverflow } from "swiper/modules";
 import { Players } from "./Players";
-import imagePlayer from "../assets/Player-image.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -33,7 +32,7 @@ export default function SliderPlayers() {
     >
       {Players.map((player, index) => (
         <SwiperSlide key={index} virtualIndex={index}>
-          <img src={imagePlayer} alt="" />
+          <img src={player.image} alt="" />
           <p>{player.name}</p>
         </SwiperSlide>
       ))}

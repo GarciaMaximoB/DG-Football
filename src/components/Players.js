@@ -2,27 +2,27 @@ export const Players = [
     {
         name:"Iván Pillud",
         team:"Racing Club",
-        image:""
+        image:"./src/assets/ivan-pillud.png"
     },
     {
         name:"Manuel Capasso",
         team:"Olimpia",
-        image:""
+        image:"./src/assets/manuel-capasso.png"
     },
     {
         name:"Gastón Campi",
         team:"San Lorenzo",
-        image:""
+        image:"./src/assets/gaston-campi.png"
     },
     {
         name:"Marco Borgnino",
         team:"Cobreloa",
-        image:""
+        image:"./src/assets/tomas-moschion.png"
     },
     {
         name:"Tomas Moschion",
         team:"FC Imabari",
-        image:""
+        image:"./src/assets/tomas-moschion.png"
     },
     
 
