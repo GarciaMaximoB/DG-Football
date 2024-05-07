@@ -188,6 +188,15 @@
   gap: 150px;
 }
 
+.swiper {
+  width: auto;
+  height: auto;
+}
+
+.players-section{
+  margin-top: 500px;
+}
+
 .teammate {
   display: flex;
   flex-direction: column;

@@ -1,7 +1,10 @@
-export default function PlayersPage(){
-    return(
-        <div>
-            <h1>Hola mundo</h1>
-        </div>
-    )
+
+import SliderPlayers from "../components/SliderPlayers";
+export default function PlayersPage() {
+  return (
+    <section className="players-section">
+      <h1>Nuestros jugadores</h1>
+        <SliderPlayers/>
+    </section>
+  );
 }
