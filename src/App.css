@@ -194,7 +194,7 @@
 }
 
 .players-section {
-  margin-top: 250px;
+  margin-top: 200px;
   height: 750px;
 }
 
@@ -218,13 +218,11 @@
 .swiper-slide {
   text-align: center;
   height: auto;
+  margin-top: 50px;
+  filter: brightness(0.3) blur(3px);
+  
 }
-.swiper-slide-visible,
-.swiper-slide-active,
-.swiper-slide-prev {
-  filter: brightness(0.3);
-  transition: all ease 0.5s;
-}
+
 .swiper-slide-next {
   filter: brightness(0.9);
   transition: all ease 0.5s;
