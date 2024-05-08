@@ -1,29 +1,32 @@
-export const Players = [
-    {
-        name:"Iván Pillud",
-        team:"Racing Club",
-        image:"./src/assets/ivan-pillud.png"
-    },
-    {
-        name:"Manuel Capasso",
-        team:"Olimpia",
-        image:"./src/assets/manuel-capasso.png"
-    },
-    {
-        name:"Gastón Campi",
-        team:"San Lorenzo",
-        image:"./src/assets/gaston-campi.png"
-    },
-    {
-        name:"Marco Borgnino",
-        team:"Cobreloa",
-        image:"./src/assets/tomas-moschion.png"
-    },
-    {
-        name:"Tomas Moschion",
-        team:"FC Imabari",
-        image:"./src/assets/tomas-moschion.png"
-    },
-    
+import capassoImage from "../assets/players/manuel-capasso.png";
+import pilludImage from "../assets/players/ivan-pillud.png";
+import campiImage from "../assets/players/gaston-campi.png";
+import MoschionImage from "../assets/players/tomas-moschion.png";
 
-]
+export const Players = [
+  {
+    name: "Iván Pillud",
+    team: "Racing Club",
+    image: pilludImage,
+  },
+  {
+    name: "Manuel Capasso",
+    team: "Olimpia",
+    image: capassoImage,
+  },
+  {
+    name: "Gastón Campi",
+    team: "San Lorenzo",
+    image: campiImage,
+  },
+  {
+    name: "Marco Borgnino",
+    team: "Cobreloa",
+    image: pilludImage,
+  },
+  {
+    name: "Tomas Moschion",
+    team: "FC Imabari",
+    image: MoschionImage,
+  },
+];
