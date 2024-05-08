@@ -10,6 +10,15 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-coverflow";
 
+const customStyles = {
+  swiperButtonNext: {
+    color: "#e7c4a2", // Cambia el color de la flecha siguiente
+  },
+  swiperButtonPrev: {
+    color: "#e7c4a2", // Cambia el color de la flecha anterior
+  },
+};
+
 export default function SliderPlayers() {
   return (
     <Swiper
@@ -18,7 +27,10 @@ export default function SliderPlayers() {
       speed={500}
       spaceBetween={100}
       slidesPerView={3}
-      navigation
+      navigation={{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }}
       effect="coverflow"
       coverflowEffect={{
         rotate: 0,
@@ -27,15 +39,21 @@ export default function SliderPlayers() {
         slideShadows: false,
       }}
       loop={true}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
     >
+      <div
+        className="swiper-button-next"
+        style={customStyles.swiperButtonNext}
+      ></div>
       {Players.map((player, index) => (
         <SwiperSlide key={index} virtualIndex={index}>
           <img src={player.image} alt="" />
           <p>{player.name}</p>
         </SwiperSlide>
       ))}
+      <div
+        className="swiper-button-prev"
+        style={customStyles.swiperButtonPrev}
+      ></div>
     </Swiper>
   );
 }
