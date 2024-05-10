@@ -10,6 +10,7 @@ import Teammate from "../components/Teammate";
 import andresTabernaImage from "../assets/Andres-Taberna.webp";
 import { team } from "../components/team";
 
+
 export default function HomePage() {
   return (
     <>
