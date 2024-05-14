@@ -11,10 +11,10 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route exact path="/" Component={HomePage} />
-          <Route path="/players" Component={PlayersPage} />
+          <Route exact path="/" element={<HomePage/>}/>
+          <Route path="/players" element={<PlayersPage/>} />
         </Routes>
-        <Footer></Footer>
+        <Footer/>
       </div>
     </Router>
   );

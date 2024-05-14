@@ -1,26 +1,40 @@
 import logoNavbar from "../assets/logo-pelota.webp";
 import { useState, useEffect } from "react";
 import menuBars from "../assets/menu-bars.svg";
-import { Link, NavLink } from "react-router-dom";
-import "../App.css";
+import { Link } from "react-router-dom";
 import { Links } from "./Links";
-export default function Navbar() {
+import React from "react";
+
+import "../App.css";
+
+const Navbar = React.memo(function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleLinkClick = (path, id, e) => {
+    const currentPath = window.location.pathname;
+    if (currentPath === path) {
+      e.preventDefault();
+      scrollToSection(id);
+    }
+  };
 
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 10);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    if (scrollTop > 10) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
-  const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -28,18 +42,22 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-      <NavLink to="/" className="navbar-logo">
+      <Link to="/" className="navbar-logo">
         <img src={logoNavbar} alt="logo-dg-football" />
         <p>Football Agency</p>
-      </NavLink>
+      </Link>
       <div className={`links-desktop ${isOpen ? "open" : ""}`}>
-        {Links.map((link) => {
-          return (
-            <NavLink to={link.href} key={link.id}>
-              {link.text}
-            </NavLink>
-          );
-        })}
+        {Links.map((link) => (
+          <a
+            href={link.path}
+            key={link.id}
+            onClick={(e) => {
+              handleLinkClick(link.path, link.seccion, e);
+            }}
+          >
+            {link.text}
+          </a>
+        ))}
       </div>
 
       <div className="menu-bars" onClick={toggleOpen}>
@@ -47,4 +65,6 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+});
+
+export default Navbar;

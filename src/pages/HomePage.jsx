@@ -70,7 +70,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section className="about-section">
+      <section className="about-section" id="nosotros">
         <div className="about-container">
           <div className="about-div">
             <h2>Sobre Nosotros</h2>
@@ -106,7 +106,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="team-section">
+      <section className="team-section" id="equipo">
         <div className="team-container">
           <h3>NUESTRO EQUIPO</h3>
           <div className="team-grid">
@@ -134,7 +134,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="filosofia-section">
+      <section className="filosofia-section" id="filosofia">
         <div className="filosofia-container">
           <h2>Filosofia</h2>
           <ul className="keys-list">

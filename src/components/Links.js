@@ -2,27 +2,32 @@ export const Links = [
     {
         id:1,
         text: "NOSOTROS",
-        href: "/"
+        path: "/",
+        seccion: "nosotros"
     },
     {
         id:2,
         text: "EQUIPO",
-        href: "/#equipo"
+        path: "/",
+        seccion: "equipo"
     },
     {
         id:3,
         text: "FILOSOFIA",
-        href: "/"
+        path: "/",
+        seccion: "filosofia"
     },
     {
         id:4,
         text: "JUGADORES",
-        href: "/players"
+        path: "/players",
+        seccion: ""
     },
     {
         id:5,
         text: "TRANSFERENCIAS",
-        href: "/"
+        path: "/transferencias",
+        seccion: ""
     },
     {
         id:6,
