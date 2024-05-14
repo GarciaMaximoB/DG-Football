@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PlayersPage from "./pages/PlayersPage";
+import TransferPage from "./pages/TransferPage";
 
 function App() {
   return (
@@ -11,10 +12,11 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<HomePage/>}/>
-          <Route path="/players" element={<PlayersPage/>} />
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/players" element={<PlayersPage />} />
+          <Route path="/transfers" element={<TransferPage />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );
