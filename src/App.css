@@ -311,6 +311,89 @@
   margin-bottom: 25px;
 }
 
+.transfer-section {
+  margin-top: 200px;
+  min-height: 100vh;
+}
+
+.container-timeline {
+  width: 100%;
+}
+.container-timeline .line {
+  width: 2px;
+  height: 623%;
+  position: absolute;
+  left: 27.7%;
+  background-color: #e7c4a2;
+}
+
+.container-timeline .grid {
+  display: grid;
+  grid-template-columns: 0.5fr 0.25fr 1.5fr;
+  margin-bottom: 50px;
+}
+
+.container-timeline .grid .left-timeline {
+  padding-left: 20px;
+}
+
+.year-timeline {
+  font-family: "Frontage", sans-serif;
+  font-size: 52px;
+  line-height: 1.5em;
+  text-align: right;
+}
+
+.grid-center {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #e7c4a2;
+  border-radius: 50%;
+}
+
+.grid-right ul{
+  margin:20px 0 10px 0 ;
+  padding-left:40px ;
+  width: 100%;
+}
+
+.grid-right ul li{
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  margin-bottom: 30px;
+  gap: 21px;
+}
+
+.name-transferencia{
+  font-family: 'Frontage', sans-serif;
+  font-size: 22px;
+  line-height: 1.5em;
+  width: 25%;
+}
+
+.span-team-transfer{
+  display: flex;
+  gap:25px;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-style: italic;
+}
+
+.span-team-transfer p{
+  font-family: "GothamLight", sans-serif;
+  opacity: 0.7;
+}
+
 .footer {
   padding: 50px 0;
   display: flex;

@@ -26,7 +26,7 @@ export const Links = [
   {
     id: 5,
     text: "TRANSFERENCIAS",
-    path: "/transferencias",
+    path: "/transfers",
     seccion: "",
   },
   {
