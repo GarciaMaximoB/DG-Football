@@ -1,16 +1,16 @@
-import capassoImage from "../assets/players/manuel-capasso.png";
-import pilludImage from "../assets/players/ivan-pillud.png";
-import campiImage from "../assets/players/gaston-campi.png";
-import moschionImage from "../assets/players/tomas-moschion.png";
-import gaggiImage from "../assets/players/enzo-gaggi.png"
-import nadalinImage from "../assets/players/facundo-nadalin.png"
-import brizuelaImage from "../assets/players/joaquin-brizuela.png"
-import licha from "../assets/players/licha.png"
-import raffinImage from "../assets/players/luca-raffin.png"
-import borgninoImage from "../assets/players/marco-borgnino.png"
-import cavalleriImage from "../assets/players/matias-cavalleri.png"
-import tisseraImage from "../assets/players/matias-tissera.png"
-import nunezImage from "../assets/players/walter-nuñez.png"
+import capassoImage from "../assets/players/manuel-capasso.webp";
+import pilludImage from "../assets/players/ivan-pillud.webp";
+import campiImage from "../assets/players/gaston-campi.webp";
+import moschionImage from "../assets/players/tomas-moschion.webp";
+import gaggiImage from "../assets/players/enzo-gaggi.webp"
+import nadalinImage from "../assets/players/facundo-nadalin.webp"
+import brizuelaImage from "../assets/players/joaquin-brizuela.webp"
+import licha from "../assets/players/licha.webp"
+import raffinImage from "../assets/players/luca-raffin.webp"
+import borgninoImage from "../assets/players/marco-borgnino.webp"
+import cavalleriImage from "../assets/players/matias-cavalleri.webp"
+import tisseraImage from "../assets/players/matias-tissera.webp"
+import nunezImage from "../assets/players/walter-nuñez.webp"
 
 
 export const Players = [
