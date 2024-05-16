@@ -314,6 +314,7 @@
 .transfer-section {
   margin-top: 200px;
   height: 100%;
+  margin-bottom: 250px;
 }
 
 .container-timeline {
@@ -325,7 +326,7 @@
   width: 2px;
   height: 100%;
   position: absolute;
-  left: 27.7%; 
+  left: 27.7%;
   background-color: #e7c4a2;
 }
 
@@ -360,13 +361,13 @@
   border-radius: 50%;
 }
 
-.grid-right ul{
-  margin:20px 0 10px 0 ;
-  padding-left:40px ;
+.grid-right ul {
+  margin: 20px 0 10px 0;
+  padding-left: 40px;
   width: 100%;
 }
 
-.grid-right ul li{
+.grid-right ul li {
   display: flex;
   justify-content: start;
   align-items: stretch;
@@ -374,16 +375,16 @@
   gap: 21px;
 }
 
-.name-transferencia{
-  font-family: 'Frontage', sans-serif;
+.name-transferencia {
+  font-family: "Frontage", sans-serif;
   font-size: 22px;
   line-height: 1.5em;
   width: 25%;
 }
 
-.span-team-transfer{
+.span-team-transfer {
   display: flex;
-  gap:25px;
+  gap: 25px;
   align-items: center;
   justify-content: center;
   font-size: 18px;
@@ -391,7 +392,7 @@
   font-style: italic;
 }
 
-.span-team-transfer p{
+.span-team-transfer p {
   font-family: "GothamLight", sans-serif;
   opacity: 0.7;
 }
@@ -405,6 +406,9 @@
   background-image: url(/src/assets/fondo_blur.png);
   background-size: cover;
   background-position: 50% 25%;
+  box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px -9px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
 .footer-container {

@@ -18,7 +18,7 @@ export default function TransferPage() {
 const TimelineYear = ({ year }) => {
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.8,
+    threshold: 0.6,
   });
 
   return (
