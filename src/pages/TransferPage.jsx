@@ -18,14 +18,14 @@ export default function TransferPage() {
 const TimelineYear = ({ year }) => {
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.8,
+    threshold: 0.5,
   });
 
   return (
     <motion.div
       className="grid"
       ref={ref}
-      initial={{ opacity: 0, scale: 1 }} 
+      initial={{ opacity: 0, scale: 0.5 }} 
       animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.5 }} 
       exit={{ opacity: 0, scale: 0.5 }} 
       transition={{ duration: 0.5 }} 
