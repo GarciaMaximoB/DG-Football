@@ -70,7 +70,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover; /* Ajusta el tamaño del video para cubrir completamente la sección */
   z-index: -1; /* Coloca el video detrás del contenido */
 }
@@ -319,9 +319,12 @@
   .lema {
     font-size: 1.25rem;
   }
+  .header-homepage {
+    height: 100vh;
+  }
 
   .container-header-homepage {
-    height: 75%;
+    height: 65%;
   }
 
   .redes {
