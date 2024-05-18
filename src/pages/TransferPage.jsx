@@ -43,7 +43,8 @@ const TimelineYear = ({ year }) => {
               <p className="name-transferencia">{transfer.player}</p>
               <span className="span-team-transfer">
                 <p>{transfer.team1}</p>
-                <p> 》</p>
+                <p className="flecha-transferencia desktop"> 》</p>
+                <p className="flecha-transferencia"> ↓ </p>
                 <p>{transfer.team2}</p>
               </span>
             </li>
