@@ -24,6 +24,7 @@ const Navbar = React.memo(function Navbar() {
       e.preventDefault();
       scrollToSection(id);
     }
+    setIsOpen(false)
   };
 
   useEffect(() => {
