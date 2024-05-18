@@ -654,6 +654,10 @@
     text-align: right;
   }
 
+  .year-timeline .grid{
+    margin-bottom: 10px;
+  }
+
   .grid-center {
     display: flex;
     justify-content: center;
