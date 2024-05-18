@@ -188,6 +188,7 @@
   gap: 150px;
 }
 
+
 .swiper {
   width: auto;
   height: auto;
@@ -309,6 +310,121 @@
   font-size: 20px;
   line-height: 1.5em;
   margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.3em;
+  }
+  .lema {
+    font-size: 1.25rem;
+  }
+
+  .container-header-homepage {
+    height: 75%;
+  }
+
+  .redes {
+    gap: 35px;
+  }
+
+  .redes a.link-flecha-abajo {
+    right: auto;
+    bottom: 10px;
+  }
+
+  .redes a.link-flecha-abajo img {
+    width: 40px;
+  }
+  .redes a img {
+    width: 25px;
+  }
+  /*ABOUT PAGE*/
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-container .about-div {
+    max-width: 100%;
+  }
+
+  .about-container .about-div h2 {
+    font-size: 36px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .about-container .about-div p {
+    font-size: 18px;
+  }
+
+  .about-container .about-logo img {
+    width: 200px;
+  }
+
+  /* TEAM SECTION */
+
+  .team-section {
+    padding: 75px 0;
+  }
+
+  .team-container h3 {
+    margin-bottom: 36px;
+  }
+
+  .team-grid {
+    gap: 0;
+  }
+
+  .team-grid .row {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    overflow-y: hidden;
+    padding-bottom: 50px;
+  }
+
+  .team-grid .row2 {
+    margin-top: 0;
+    padding-top: 25px;
+    gap: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teammate-image {
+    width: 225px;
+  }
+
+  .filosofia-section {
+    padding: 75px 0;
+  }
+  
+  .filosofia-container {
+    padding: 10px 20px;
+    max-width: 80%;
+  }
+  
+  .filosofia-container h2 {
+    font-size: 36px;
+  }
+  
+  .filosofia-container ul li {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+  .filosofia-container ul p {
+    font-size: 14px;
+  }
 }
 
 .transfer-section {
