@@ -649,7 +649,7 @@
   }
   .links-desktop.open {
     height: 90vh;
-    top: 90px;
+    top: 100%;
     opacity: 1;
   }
 }
