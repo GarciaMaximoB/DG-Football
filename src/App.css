@@ -188,57 +188,6 @@
   gap: 150px;
 }
 
-
-.swiper {
-  width: auto;
-  height: auto;
-}
-
-.players-section {
-  margin-top: 200px;
-  height: 750px;
-}
-
-.players-section h1 {
-  display: block;
-  padding: 0 40px 5px 40px;
-  width: 32%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 15px;
-  margin-top: 20px;
-  font-size: 44px;
-  line-height: 1.5em;
-  color: #e7c4a2;
-  font-family: "GothamBook", sans-serif;
-  font-weight: 400;
-  border-bottom: 2.5px solid #e7c4a2;
-}
-
-.swiper-slide {
-  text-align: center;
-  height: auto;
-  margin-top: 50px;
-  filter: brightness(0.3) blur(3px);
-}
-
-.swiper-slide-next {
-  filter: brightness(0.9);
-  transition: all ease 0.5s;
-}
-
-.swiper-slide img {
-  height: 400px;
-}
-.swiper-slide p {
-  font-size: 48px;
-  line-height: 1.5em;
-  color: #e7c4a2;
-  text-align: center;
-  font-family: "Frontage", sans-serif;
-}
-
 .teammate {
   display: flex;
   flex-direction: column;
@@ -310,6 +259,56 @@
   font-size: 20px;
   line-height: 1.5em;
   margin-bottom: 25px;
+}
+
+.swiper {
+  width: auto;
+  height: auto;
+}
+
+.players-section {
+  margin-top: 200px;
+  height: 750px;
+}
+
+.players-section h1 {
+  display: block;
+  padding: 0 40px 5px 40px;
+  width: 32%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-size: 44px;
+  line-height: 1.5em;
+  color: #e7c4a2;
+  font-family: "GothamBook", sans-serif;
+  font-weight: 400;
+  border-bottom: 2.5px solid #e7c4a2;
+}
+
+.swiper-slide {
+  text-align: center;
+  height: auto;
+  margin-top: 50px;
+  filter: brightness(0.3) blur(3px);
+}
+
+.swiper-slide-next {
+  filter: brightness(0.9);
+  transition: all ease 0.5s;
+}
+
+.swiper-slide img {
+  height: 400px;
+}
+.swiper-slide p {
+  font-size: 48px;
+  line-height: 1.5em;
+  color: #e7c4a2;
+  text-align: center;
+  font-family: "Frontage", sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -428,6 +427,37 @@
   .filosofia-container ul p {
     font-size: 14px;
   }
+
+
+
+  .players-section {
+    margin-top: 150px;
+    height: 80vh;
+  }
+  
+  .players-section h1 {
+    padding: 0 0px 5px 0px;
+    width: 80%;
+    font-size: 30px;
+  }
+
+  .swiper-slide img {
+    height: auto;
+    width:80vw;
+  }
+  .swiper-slide p {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .swiper-slide-active{
+    filter: brightness(0.9);
+  } 
+
+  .swiper-slide-next{
+    filter: brightness(0.3) blur(3px);
+  }
+
 }
 
 .transfer-section {

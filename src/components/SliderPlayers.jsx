@@ -24,7 +24,7 @@ export default function SliderPlayers() {
     <Swiper
       className="myCustomSwiper"
       modules={[Navigation, Pagination, A11y, EffectCoverflow]}
-      speed={500}
+      speed={550}
       spaceBetween={100}
       slidesPerView={3}
       navigation={{
@@ -39,6 +39,21 @@ export default function SliderPlayers() {
         slideShadows: false,
       }}
       loop={true}
+
+      breakpoints={{
+        320:{
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      }}
     >
       <div
         className="swiper-button-next"
