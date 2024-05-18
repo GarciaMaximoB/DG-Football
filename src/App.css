@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: left;
+  filter: brightness(2);
 }
 .navbar-logo p {
   font-family: "Frontage", sans-serif;
@@ -801,11 +802,13 @@
   }
   .navbar-logo p {
     font-size: 20px;
-    color: #e7c4a2;
+    color: #e7c4a2;;
+    filter: brightness(0.5);
   }
   .navbar-logo img {
     margin-top: 0px;
     width: 50px;
+    filter: brightness(0.5);
   }
   .menu-bars {
     display: block;
