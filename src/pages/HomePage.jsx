@@ -15,6 +15,15 @@ import { useState } from "react";
 
 export default function HomePage() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [selectedTeammate, setSelectedTeammate] = useState(null);
+
+  const handleTeammateClick = (teammate) => {
+    setSelectedTeammate(teammate);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedTeammate(null);
+  };
 
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
@@ -123,6 +132,7 @@ export default function HomePage() {
                   image={andresTabernaImage}
                   name={teammate.name}
                   cargo={teammate.cargo}
+                  onClick={() => handleTeammateClick(teammate)}
                 />
               ))}
             </div>
@@ -133,12 +143,15 @@ export default function HomePage() {
                   image={andresTabernaImage}
                   name={teammate.name}
                   cargo={teammate.cargo}
+                  onClick={() => handleTeammateClick(teammate)}
                 />
               ))}
             </div>
           </div>
         </div>
-        <button onClick={() => (modalOpen ? close() : open())}>aaaaaaa</button>
+        {selectedTeammate && (
+          <Modal teammate={selectedTeammate} handleClose={handleCloseModal} />
+        )}
       </section>
 
       <section className="filosofia-section" id="filosofia">

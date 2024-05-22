@@ -555,6 +555,10 @@
   line-height: 1.5em;
 }
 
+.parrafo-teammate{
+  margin-bottom: 1.5em;
+}
+
 @media (max-width: 768px) {
   .main-title {
     font-size: 2.3em;

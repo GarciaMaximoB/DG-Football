@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-export default function Teammate({image, name, cargo}) {
+export default function Teammate({image, name, cargo, onClick}) {
   return (
-    <div className="teammate">
+    <div className="teammate" onClick={onClick}>
       <Link>
         <img src={image} alt={name} className="teammate-image" />
       </Link>
