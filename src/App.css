@@ -655,7 +655,7 @@
     text-align: right;
   }
 
-  .year-timeline .grid{
+  .year-timeline .grid {
     margin-bottom: 10px;
   }
 
@@ -802,7 +802,7 @@
   }
   .navbar-logo p {
     font-size: 20px;
-    color: #e7c4a2;;
+    color: #e7c4a2;
     filter: brightness(0.5);
   }
   .navbar-logo img {
