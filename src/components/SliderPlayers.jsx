@@ -2,7 +2,8 @@
 import { Navigation, Pagination, A11y, EffectCoverflow } from "swiper/modules";
 import { Players } from "./Players";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { motion } from "framer-motion";
+import escudo from "../assets/escudo.png"
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -39,9 +40,8 @@ export default function SliderPlayers() {
         slideShadows: false,
       }}
       loop={true}
-
       breakpoints={{
-        320:{
+        320: {
           slidesPerView: 1,
           spaceBetween: 20,
         },
@@ -60,9 +60,18 @@ export default function SliderPlayers() {
         style={customStyles.swiperButtonNext}
       ></div>
       {Players.map((player, index) => (
-        <SwiperSlide key={index} virtualIndex={index}>
+        <SwiperSlide key={index} virtualIndex={index} className="player">
           <img src={player.image} alt="" />
           <p>{player.name}</p>
+          {/* <div className="player-overlay">
+            <img src={escudo} alt="" className="escudo"/>
+            <div className="player-social">
+              <a href={player.twitter}>Twitter</a>
+              <a href={player.instagram}>Instagram</a>
+              <a href="">aaa</a>
+              <a href="">aaa</a>
+            </div>
+          </div> */}
         </SwiperSlide>
       ))}
       <div
