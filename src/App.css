@@ -513,7 +513,7 @@
   z-index: 1000;
 }
 
-.icon-close{
+.icon-close {
   width: 35px;
   position: absolute;
   right: 70px;
@@ -555,8 +555,48 @@
   line-height: 1.5em;
 }
 
-.parrafo-teammate{
+.parrafo-teammate {
   margin-bottom: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .icon-close {
+    width: 25px;
+    right: 35px;
+    top: 35px;
+  }
+
+  .teammate-card-container {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .teammate-card-image img {
+    width: 200px;
+    margin-right: 25px;
+    border-radius: 2px;
+  }
+
+  .teammate-card-text {
+    width:100%;
+  }
+
+  .teammate-card-text h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  .teammate-card-text p {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.35em;
+  }
+
+  .parrafo-teammate {
+    margin-bottom: 1.15em;
+  }
 }
 
 @media (max-width: 768px) {
