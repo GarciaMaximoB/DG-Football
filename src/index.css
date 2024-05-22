@@ -37,8 +37,10 @@ a{
   padding: 0;
 }
 
-  body {
+  body{
     font-family: 'GothamBook' , sans-serif;
+    font-smooth: antialiased;
+    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #0c2340;

@@ -58,6 +58,7 @@
   font-size: 5em;
   line-height: 1.5em;
 }
+
 .lema {
   font-size: 2.5rem;
   color: #e7c4a2;
@@ -482,6 +483,76 @@
 .footer-bottom span {
   font-family: "GothamLight", sans-serif;
   font-weight: 300;
+}
+
+/*modal*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background: #000000a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.modal {
+  width: clamp(95%, 500px, 90%);
+  height: min(100%, 90%);
+  margin: auto;
+  padding: 50px 40px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0c2340;
+  z-index: 1000;
+}
+
+.icon-close{
+  width: 35px;
+  position: absolute;
+  right: 70px;
+  cursor: pointer;
+}
+
+.teammate-card-container {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teammate-card-image img {
+  width: 350px;
+  margin-right: 25px;
+  border-radius: 2px;
+}
+
+.teammate-card-text {
+  width: 50%;
+}
+
+.teammate-card-text h3 {
+  margin-bottom: 15px;
+  font-size: 44px;
+  font-weight: 200;
+  color: #e7c4a2;
+  line-height: 1.5em;
+  font-family: "GothamLight", sans-serif;
+}
+
+.teammate-card-text p {
+  font-family: "GothamLight", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 @media (max-width: 768px) {

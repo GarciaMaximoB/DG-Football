@@ -9,9 +9,15 @@ import logoMonocromoCobre from "../assets/logo-monocromo-cobre.png";
 import Teammate from "../components/Teammate";
 import andresTabernaImage from "../assets/Andres-Taberna.webp";
 import { team } from "../components/team";
-
+import { AnimatePresence } from "framer-motion";
+import Modal from "../components/Modal";
+import { useState } from "react";
 
 export default function HomePage() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const close = () => setModalOpen(false);
+  const open = () => setModalOpen(true);
   return (
     <>
       <header className="header-homepage">
@@ -132,6 +138,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        <button onClick={() => (modalOpen ? close() : open())}>aaaaaaa</button>
       </section>
 
       <section className="filosofia-section" id="filosofia">
@@ -205,6 +212,10 @@ export default function HomePage() {
           </ul>
         </div>
       </section>
+
+      <AnimatePresence initial={false} wait={true} onExitComplete={() => null}>
+        {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+      </AnimatePresence>
     </>
   );
 }
