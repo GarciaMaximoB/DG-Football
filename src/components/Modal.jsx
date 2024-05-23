@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Backdrop from "./Backdrop.jsx";
-import imagen from "../assets/Andres-Taberna.webp";
 import iconClose from "../assets/cerrar-icon.png";
 const dropIn = {
   hidden: {

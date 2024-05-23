@@ -1,4 +1,4 @@
-import andresImage from "../assets/Andres-Taberna.webp";
+import andresImage from "../assets/equipo/Andres-Taberna.webp";
 
 export const team = [
   {

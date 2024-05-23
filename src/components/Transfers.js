@@ -9,6 +9,12 @@ export const Transfers = [
         team2: "OLIMPIA (Paraguay)",
       },
       {
+        id: 7,
+        player: "GASTON CAMPI",
+        team1: "SAN LORENZO (Argentina)",
+        team2: "RENOVACION",
+      },
+      {
         id: 2,
         player: "MARCO BORGNINO",
         team1: "FARUL CONSTANTA (Rumania)",
@@ -38,12 +44,6 @@ export const Transfers = [
         team1: "BROWN A. (2° Argentina)",
         team2: "TEMPERLEY (2° Argentina)",
       },
-      {
-        id: 7,
-        player: "FACUNDO NADALIN",
-        team1: "RENOVACIÓN",
-        team2: "RENOVACIÓN",
-      },
     ],
   },
   {
@@ -72,18 +72,6 @@ export const Transfers = [
         player: "ENZO GAGGI",
         team1: "VOLOS (Grecia)",
         team2: "GODOY CRUZ (Argentina)",
-      },
-      {
-        id: 12,
-        player: "RAFAEL SANGIOVANI",
-        team1: "VILLA DALMINE (2° Argentina)",
-        team2: "INDEPENDIENTE RIV. (2° Argentina)",
-      },
-      {
-        id: 13,
-        player: "FACUNDO MASUERO",
-        team1: "COLÓN (Argentina)",
-        team2: "INDEPENDIENTE RIV. (2° Argentina)",
       },
     ],
   },
@@ -117,7 +105,7 @@ export const Transfers = [
       {
         id: 18,
         player: "IVÁN PILLUD",
-        team1: "RENOVACIÓN RACING CLUB",
+        team1: "RACING CLUB (Argentina)",
         team2: "RENOVACIÓN",
       },
       {
@@ -212,7 +200,7 @@ export const Transfers = [
       {
         id: 33,
         player: "MATIAS TISSERA",
-        team1: "RENOVACIÓN PLATENSE (Argentina)",
+        team1: "PLATENSE (Argentina)",
         team2: "RENOVACIÓN",
       },
       {
@@ -253,7 +241,7 @@ export const Transfers = [
       {
         id: 39,
         player: "IVÁN PILLUD",
-        team1: "RENOVACIÓN RACING CLUB",
+        team1: "RACING CLUB (Argentina)",
         team2: "RENOVACIÓN",
       },
       {
@@ -322,12 +310,6 @@ export const Transfers = [
         team2: "CHACARITA (2° Argentina)",
       },
       {
-        id: 50,
-        player: "ENZO GAGGI",
-        team1: "AT. RAFAELA (2°Argentina)",
-        team2: "CENTRAL NORTE (3°Argentina)",
-      },
-      {
         id: 51,
         player: "MATIAS ODONE",
         team1: "NEWELL´S RES. (Argentina)",
@@ -394,8 +376,8 @@ export const Transfers = [
       {
         id: 60,
         player: "ENZO GAGGI",
-        team1: "FIRMA PRIMER CONTRATO PROFESIONAL EN AT. RAFAELA",
-        team2: "",
+        team1: "AT. RAFAELA (Argentina)",
+        team2: "FIRMA PRIMER CONTRATO PROFESIONAL",
       },
     ],
   },
@@ -439,7 +421,7 @@ export const Transfers = [
       {
         id: 65,
         player: "IVÁN PILLUD",
-        team1: "RENOVACIÓN RACING CLUB",
+        team1: "RACING CLUB (Argentina)",
         team2: "RENOVACIÓN",
       },
       {
@@ -456,7 +438,7 @@ export const Transfers = [
       {
         id: 67,
         player: "IVÁN PILLUD",
-        team1: "RENOVACIÓN RACING CLUB",
+        team1: "RACING CLUB (Argentina)",
         team2: "RENOVACIÓN",
       },
     ],
@@ -467,14 +449,14 @@ export const Transfers = [
       {
         id: 68,
         player: "IVÁN PILLUD",
-        team1: "CONVOCADO SELECCIÓN ARGENTINA",
-        team2: "",
+        team1: "SELECCION ARGENTINA",
+        team2: "Convocacion",
       },
       {
         id: 69,
         player: "FACUNDO CASTILLON",
-        team1: "RENOVACIÓN GODOY CRUZ (Argentina)",
-        team2: "",
+        team1: "GODOY CRUZ (Argentina)",
+        team2: "RENOVACIÓN",
       },
     ],
   },
