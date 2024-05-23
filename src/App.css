@@ -297,7 +297,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   display: grid;
   opacity: 0;
-  transform: scale(0.5);
+  transform: scale(0);
   align-items: center;
   text-align: center;
   transition: 0.3s all ease;
@@ -306,7 +306,7 @@
   height: 100%;
 }
 
-.player.swiper-slide-next:hover .player-overlay {
+.player.swiper-slide-active:hover .player-overlay {
   opacity: 1; /* Mostrar overlay al hacer hover */
   transform: scale(1);
   transition: all ease 0.3s;
@@ -322,13 +322,13 @@
 }
 .player-social a {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   font-family: "Frontage", sans-serif;
-  border: 1px solid white;
+  border: 2px solid #0c2340;
   transition: 0.3s all ease;
 }
 

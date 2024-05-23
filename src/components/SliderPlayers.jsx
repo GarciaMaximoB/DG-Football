@@ -2,11 +2,6 @@
 import { Navigation, Pagination, A11y, EffectCoverflow } from "swiper/modules";
 import { Players } from "./Players";
 import { Swiper, SwiperSlide } from "swiper/react";
-import wyscoutLogo from "../assets/wyscout-logo.png";
-import soccerwayLogo from "../assets/soccerway-logo.png";
-import youtubeLogo from "../assets/youtube-logo.png";
-import transferMktLogo from "../assets/transfermkt-logo.png";
-import escudo from "../assets/escudo.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
