@@ -289,42 +289,57 @@
   font-weight: 400;
   border-bottom: 2.5px solid #e7c4a2;
 }
+
 .player-overlay {
   position: absolute;
-  top: 45%;
-  left: 45%;
-  width: 10%;
-  height: 10%;
+  top: 0;
+  left: 9%;
   background-color: rgba(0, 0, 0, 0.5);
   display: grid;
   opacity: 0;
-  justify-content: center;
+  transform: scale(0.5);
   align-items: center;
   text-align: center;
   transition: 0.3s all ease;
-  border-radius: 55%;
-}
-
-.player.swiper-slide-next .player-overlay {
-  opacity: 1; /* Mostrar overlay al hacer hover */
-  border-radius: 3px;
-  top: 0;
-  left: 9%;
+  transition: all ease 0.3s;
   width: 90%;
   height: 100%;
 }
 
-.player-social {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: end;
+.player.swiper-slide-next:hover .player-overlay {
+  opacity: 1; /* Mostrar overlay al hacer hover */
+  transform: scale(1);
+  transition: all ease 0.3s;
 }
 
-.escudo {
-  position: absolute;
-  width: 200px;
+.player-social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  height: 100%;
+  width: 100%;
+}
+.player-social a {
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Frontage", sans-serif;
+  border: 1px solid white;
+  transition: 0.3s all ease;
+}
 
+.player-social a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.player-overlay .escudo {
+  position: absolute;
+  width: 20%;
+  height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -333,7 +348,14 @@
 .player-social a {
   margin-bottom: 10px;
   color: white;
+  margin: 0;
 }
+
+.player-social a img {
+  width: 50%;
+  height: auto;
+}
+
 .swiper-slide {
   text-align: center;
   height: auto;
@@ -343,6 +365,7 @@
 
 .swiper-slide-next {
   filter: brightness(0.9);
+  cursor: pointer;
   transition: all ease 0.5s;
 }
 
@@ -606,7 +629,7 @@
 }
 
 @media (max-width: 768px) {
-  .modal{
+  .modal {
     height: fit-content;
   }
   .icon-close {

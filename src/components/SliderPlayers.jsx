@@ -2,8 +2,11 @@
 import { Navigation, Pagination, A11y, EffectCoverflow } from "swiper/modules";
 import { Players } from "./Players";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { motion } from "framer-motion";
-import escudo from "../assets/escudo.png"
+import wyscoutLogo from "../assets/wyscout-logo.png";
+import soccerwayLogo from "../assets/soccerway-logo.png";
+import youtubeLogo from "../assets/youtube-logo.png";
+import transferMktLogo from "../assets/transfermkt-logo.png";
+import escudo from "../assets/escudo.png";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -63,15 +66,16 @@ export default function SliderPlayers() {
         <SwiperSlide key={index} virtualIndex={index} className="player">
           <img src={player.image} alt="" />
           <p>{player.name}</p>
-          {/* <div className="player-overlay">
-            <img src={escudo} alt="" className="escudo"/>
+
+          <div className="player-overlay">
+            <img src={player.team} alt="" className="escudo" />
             <div className="player-social">
-              <a href={player.twitter}>Twitter</a>
-              <a href={player.instagram}>Instagram</a>
-              <a href="">aaa</a>
-              <a href="">aaa</a>
+              <a href={player.redes.transferMarkt}>TransferMarket</a>
+              <a href={player.redes.soccerWay}>soccerway</a>
+              <a href={player.redes.Youtube}>youtube</a>
+              <a href={player.redes.wyscout}>wyscout</a>
             </div>
-          </div> */}
+          </div>
         </SwiperSlide>
       ))}
       <div

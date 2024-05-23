@@ -17,60 +17,72 @@ export const Players = [
     name: "Enzo Gaggi",
     team: "",
     image: gaggiImage,
+    redes:[{}]
   },
   {
     name: "Facundo Nadalin",
     team: "",
     image: nadalinImage,
+    redes:[{}]
   },
   {
     name: "Gaston Campi",
     team: "",
     image: campiImage,
+    redes:[{}]
   },
   {
     name: "Ivan Pillud",
     team: "",
     image: pilludImage,
+    redes:[{}]
   },
   {
     name: "Joaquin Brizuela",
     team: "",
     image: brizuelaImage,
+    redes:[{}]
   },
   {
     name: "Luca Raffin",
     team: "",
     image: raffinImage,
+    redes:[{}]
   },
   {
     name: "Manuel Capasso",
     team: "",
     image: capassoImage,
+    redes:[{}]
   },
   {
     name: "Marco Borgnino",
     team: "",
     image: borgninoImage,
+    redes:[{}]
   },
   {
     name: "Matias Cavalleri",
     team: "",
     image: cavalleriImage,
+    redes:[{}]
   },
   {
     name: "Matias Tissera",
     team: "",
     image: tisseraImage,
+    redes:[{}]
   },
   {
     name: "Tomas Moschion",
     team: "",
     image: moschionImage,
+    redes:[{}]
   },
   {
     name: "Walter Nuñez",
     team: "",
     image: nunezImage,
+    redes:[{}]
   },
 ];
