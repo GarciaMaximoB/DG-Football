@@ -306,6 +306,8 @@
   height: 100%;
 }
 
+
+
 .player.swiper-slide-active:hover .player-overlay {
   opacity: 1; /* Mostrar overlay al hacer hover */
   transform: scale(1);
@@ -358,6 +360,7 @@
 
 .swiper-slide {
   text-align: center;
+
   height: auto;
   margin-top: 50px;
   filter: brightness(0.3) blur(3px);
@@ -672,6 +675,15 @@
 }
 
 @media (max-width: 768px) {
+  .player-overlay{
+    left: 0;
+    width: 100%;
+  }
+
+  .player-social a{
+    font-size: 1.25em;
+  }
+  
   .main-title {
     font-size: 2.3em;
   }
