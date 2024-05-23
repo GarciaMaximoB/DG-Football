@@ -308,7 +308,7 @@
 
 
 
-.player.swiper-slide-active:hover .player-overlay {
+.player.swiper-slide-next:hover .player-overlay {
   opacity: 1; /* Mostrar overlay al hacer hover */
   transform: scale(1);
   transition: all ease 0.3s;
@@ -639,6 +639,12 @@
     width: 25px;
     right: 35px;
     top: 35px;
+  }
+
+  .player.swiper-slide-active:hover .player-overlay {
+    opacity: 1; /* Mostrar overlay al hacer hover */
+    transform: scale(1);
+    transition: all ease 0.3s;
   }
 
   .teammate-card-container {
