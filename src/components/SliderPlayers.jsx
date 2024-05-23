@@ -23,6 +23,19 @@ const customStyles = {
   },
 };
 
+const PlayerSocialLinks = ({ player }) => {
+  const { redes } = player;
+
+  return (
+    <div className="player-social">
+      {redes.transferMarkt && <a href={redes.transferMarkt} target="_blank" rel="noopener noreferrer">TransferMarket</a>}
+      {redes.soccerWay && <a href={redes.soccerWay} target="_blank" rel="noopener noreferrer">soccerway</a>}
+      {redes.Youtube && <a href={redes.Youtube} target="_blank" rel="noopener noreferrer">youtube</a>}
+      {redes.wyscout && <a href={redes.wyscout} target="_blank" rel="noopener noreferrer">wyscout</a>}
+    </div>
+  );
+};
+
 export default function SliderPlayers() {
   return (
     <Swiper
@@ -69,12 +82,7 @@ export default function SliderPlayers() {
 
           <div className="player-overlay">
             <img src={player.team} alt="" className="escudo" />
-            <div className="player-social">
-              <a href={player.redes.transferMarkt}>TransferMarket</a>
-              <a href={player.redes.soccerWay}>soccerway</a>
-              <a href={player.redes.Youtube}>youtube</a>
-              <a href={player.redes.wyscout}>wyscout</a>
-            </div>
+            <PlayerSocialLinks player={player} />
           </div>
         </SwiperSlide>
       ))}
