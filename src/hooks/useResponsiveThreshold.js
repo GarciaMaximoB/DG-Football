@@ -8,7 +8,7 @@ const useResponsiveThreshold = () => {
       if (window.innerWidth < 640) {
         setThreshold(0.15); // Valor para pantallas pequeñas
       } else if (window.innerWidth < 1024) {
-        setThreshold(0.5); // Valor para pantallas medianas
+        setThreshold(0.15); // Valor para pantallas medianas
       } else {
         setThreshold(0.5); // Valor para pantallas grandes
       }
