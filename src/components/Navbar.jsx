@@ -20,11 +20,11 @@ const Navbar = React.memo(function Navbar() {
 
   const handleLinkClick = (path, id, e) => {
     const currentPath = window.location.pathname;
-    if (currentPath === path) {
+    if (currentPath === path || path === "") {
       e.preventDefault();
       scrollToSection(id);
     }
-    setIsOpen(false)
+    setIsOpen(false);
   };
 
   useEffect(() => {

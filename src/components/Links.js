@@ -32,6 +32,7 @@ export const Links = [
   {
     id: 6,
     text: "CONTACTO",
-    href: "/",
+    path: "",
+    seccion: "contacto"
   },
 ];
