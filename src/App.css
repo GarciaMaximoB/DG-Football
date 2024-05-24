@@ -929,41 +929,6 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
-  .navbar-logo {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    filter: brightness(0);
-  }
-  .navbar-logo p {
-    font-family: "Frontage", sans-serif;
-    margin-left: 5px;
-    font-size: 40px;
-  }
-  .navbar-logo img {
-    margin-top: 10px;
-    width: 100px;
-  }
-  .links-desktop {
-    width: 65%;
-    padding: 5px 50px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .links-desktop a {
-    font-family: "GothamBold", sans-serif;
-    font-size: 14px;
-    line-height: 1.5em;
-    transition: all ease 0.3s;
-  }
-  .links-desktop a:hover {
-    transform: scale(1.125);
-    text-decoration: underline;
-  }
-}
-
 @media (max-width: 767.98px) {
   .navbar {
     background-color: #0c1424;
