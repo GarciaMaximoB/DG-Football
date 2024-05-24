@@ -16,7 +16,7 @@ function App() {
           <Route path="/players" element={<PlayersPage />} />
           <Route path="/transfers" element={<TransferPage />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

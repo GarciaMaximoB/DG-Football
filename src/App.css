@@ -105,6 +105,7 @@
 }
 
 .redes a.link-flecha-abajo {
+  display: none;
   position: absolute;
   right: 5px;
   background-color: transparent;
@@ -927,6 +928,39 @@
     align-items: start;
     font-size: 16px;
   }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-container h3 {
+    align-self: center;
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .footer span.contact-item {
+    margin-bottom: 25px;
+  }
+
+  .footer span.contact-item a {
+    font-size: 18px;
+  }
+
+  .footer span.contact-item img {
+    width: 28px;
+  }
+
+  .footer img {
+    width: 100px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1327,5 +1361,45 @@
 
   .parrafo-teammate {
     margin-bottom: 1.15em;
+  }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-container h3 {
+    align-self: center;
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .footer span.contact-item {
+    margin-bottom: 25px;
+  }
+
+  .footer span.contact-item a {
+    font-size: 18px;
+  }
+
+  .footer span.contact-item img {
+    width: 28px;
+  }
+
+  .footer img {
+    width: 100px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0px;
+  }
+
+  .footer-bottom span{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
