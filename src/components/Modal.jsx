@@ -35,14 +35,14 @@ const Modal = ({ teammate, handleClose }) => {
       >
         <img
           src={iconClose}
-          alt=""
+          alt="close icon"
           onClick={handleClose}
           className="icon-close"
         />
 
         <div className="teammate-card-container">
           <div className="teammate-card-image">
-            <img src={teammate.image} alt={teammate.name} />
+            <img src={teammate.image} alt={`Imagen de ${teammate.name}`}/>
           </div>
           <div className="teammate-card-text">
             <h3>Conocé a {teammate.apodo}</h3>

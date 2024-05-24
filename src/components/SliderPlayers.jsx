@@ -72,11 +72,11 @@ export default function SliderPlayers() {
       ></div>
       {Players.map((player, index) => (
         <SwiperSlide key={index} virtualIndex={index} className="player">
-          <img src={player.image} alt="" />
+          <img src={player.image} alt={`Foto de ${player.name}`} />
           <p>{player.name}</p>
 
           <div className="player-overlay">
-            <img src={player.team} alt="" className="escudo" />
+            <img src={player.team} alt={`Escudo de ${player.team}`} className="escudo" />
             <PlayerSocialLinks player={player} />
           </div>
         </SwiperSlide>

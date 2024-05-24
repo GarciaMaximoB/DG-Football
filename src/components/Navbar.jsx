@@ -44,7 +44,7 @@ const Navbar = React.memo(function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <Link to="/" className="navbar-logo">
-        <img src={logoNavbar} alt="logo-dg-football" />
+        <img src={logoNavbar} alt="Logo DG Football Agency" />
         <p>Football Agency</p>
       </Link>
       <div className={`links-desktop ${isOpen ? "open" : ""}`}>

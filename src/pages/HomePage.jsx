@@ -26,7 +26,6 @@ export default function HomePage() {
   };
 
   const close = () => setModalOpen(false);
-  const open = () => setModalOpen(true);
   return (
     <>
       <header className="header-homepage">
@@ -45,7 +44,7 @@ export default function HomePage() {
           >
             <img
               src={instagramIcon}
-              alt="Instagram-icon"
+              alt="Instagram icon"
               className="icon-social"
             />
           </Link>
@@ -53,7 +52,7 @@ export default function HomePage() {
             to="https://www.youtube.com/channel/UCSU4NlK4HVhwj7dizRGPNDg"
             target="_blank"
           >
-            <img src={youtubeIcon} alt="Youtube-icon" className="icon-social" />
+            <img src={youtubeIcon} alt="Youtube icon" className="icon-social" />
           </Link>
           <Link
             to="https://www.linkedin.com/company/dgf-agency/"
@@ -61,7 +60,7 @@ export default function HomePage() {
           >
             <img
               src={linkedinIcon}
-              alt="Linkedin-icon"
+              alt="Linkedin icon"
               className="icon-social"
             />
           </Link>
@@ -71,7 +70,7 @@ export default function HomePage() {
           >
             <img
               src={transferMktIcon}
-              alt="transfermarkt-icon"
+              alt="Transfermarkt icon"
               className="icon-social"
             />
           </Link>

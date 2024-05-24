@@ -12,13 +12,13 @@ export default function Footer() {
           <a href="mailto:contacto@dgfootball.com">contacto@dgfootball.com</a>
         </span>
         <span className="contact-item">
-          <img src={phoneIcon} alt="mail icon" />
+          <img src={phoneIcon} alt="phone icon" />
           <a href="tel:+5491126952420">+54 9 11 2695-2420</a>
         </span>
       </div>
       <div className="footer-bottom">
         <p>Todos los derechos reservados © DG Football Agency</p>
-        <img src={logoMonocromo} alt="" />
+        <img src={logoMonocromo} alt="Logo DG Football Agency" />
         <span>
           <p>Sitio diseñado y desarrollado por </p>
           <a href="https://maximogarciadev.com" target="_blank">
