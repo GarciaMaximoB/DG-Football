@@ -7,7 +7,6 @@ import transferMktIcon from "../assets/transfermkt-icon.png";
 import flechaAbajo from "../assets/flecha-abajo.png";
 import logoMonocromoCobre from "../assets/logo-monocromo-cobre.png";
 import Teammate from "../components/Teammate";
-import andresTabernaImage from "../assets/equipo/Andres-Taberna.webp";
 import { team } from "../components/team";
 import { AnimatePresence } from "framer-motion";
 import Modal from "../components/Modal";
@@ -128,7 +127,7 @@ export default function HomePage() {
               {team.slice(0, 3).map((teammate) => (
                 <Teammate
                   key={teammate.id}
-                  image={andresTabernaImage}
+                  image={teammate.image}
                   name={teammate.name}
                   cargo={teammate.cargo}
                   onClick={() => handleTeammateClick(teammate)}
@@ -139,7 +138,7 @@ export default function HomePage() {
               {team.slice(3, 5).map((teammate) => (
                 <Teammate
                   key={teammate.id}
-                  image={andresTabernaImage}
+                  image={teammate.image}
                   name={teammate.name}
                   cargo={teammate.cargo}
                   onClick={() => handleTeammateClick(teammate)}

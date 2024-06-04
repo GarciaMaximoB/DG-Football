@@ -207,6 +207,10 @@
 .teammate-image {
   width: 275px;
   border-radius: 50%;
+  background-color: #e7c4a2f8;
+  box-shadow: 0px 15px 9px -1px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 0px 15px 9px -1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 15px 9px -1px rgba(0, 0, 0, 0.21);
 }
 
 .name-teammate {
@@ -1397,7 +1401,7 @@
     margin-left: 0px;
   }
 
-  .footer-bottom span{
+  .footer-bottom span {
     display: flex;
     flex-direction: column;
     gap: 10px;
