@@ -276,6 +276,8 @@
   width: 350px;
   margin-right: 50px;
   border-radius: 2px;
+  background-color: #a48371;
+  border-radius: 50%;
 }
 
 .teammate-card-text {
