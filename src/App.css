@@ -801,6 +801,7 @@
 
   .teammate-card-image img {
     width: 250px;
+    border-radius: 50%;
   }
 
   .teammate-card-text {
