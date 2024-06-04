@@ -42,7 +42,7 @@ const Modal = ({ teammate, handleClose }) => {
         />
 
         <div className="teammate-card-container">
-          <div className="teammate-card-image">
+          <div className={teammate.image ? 'teammate-card-image bg' : 'teammate-card-image'}>
             <img src={teammate.image ? teammate.image : logoPelota } alt={`Imagen de ${teammate.name}`}/>
           </div>
           <div className="teammate-card-text">
