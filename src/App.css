@@ -1350,6 +1350,7 @@
   .teammate-card-image img {
     width: 200px;
     margin-right: 25px;
+    margin-bottom: 20px;
     border-radius: 50%;
   }
 
