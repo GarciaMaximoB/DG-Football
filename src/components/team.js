@@ -1,6 +1,5 @@
-import andresImage from "../assets/equipo/andres-taberna.png";
-import juanImage from "../assets/equipo/juan-davola.png";
-import logoPelota from "../assets/logo-pelota.png";
+import andresImage from "../assets/equipo/andres-taberna.webp";
+import juanImage from "../assets/equipo/juan-davola.webp";
 
 export const team = [
   {

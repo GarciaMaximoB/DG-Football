@@ -11,7 +11,7 @@ import { team } from "../components/team";
 import { AnimatePresence } from "framer-motion";
 import Modal from "../components/Modal";
 import { useState } from "react";
-import logoPelota from "../assets/logo-pelota.png"
+import logoPelota from "../assets/logo-pelota-azul.webp"
 
 export default function HomePage() {
   const [modalOpen, setModalOpen] = useState(false);
