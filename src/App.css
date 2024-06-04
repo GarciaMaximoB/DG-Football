@@ -278,6 +278,9 @@
   border-radius: 2px;
   background-color: #a48371;
   border-radius: 50%;
+  box-shadow: 1px 14px 15px 4.2px rgba(0,0,0,0.35);
+-webkit-box-shadow: 1px 14px 15px 4.2px rgba(0,0,0,0.35);
+-moz-box-shadow: 1px 14px 15px 4.2px rgba(0,0,0,0.35);
 }
 
 .teammate-card-text {
@@ -801,7 +804,6 @@
 
   .teammate-card-image img {
     width: 250px;
-    border-radius: 50%;
   }
 
   .teammate-card-text {
@@ -1348,7 +1350,7 @@
   .teammate-card-image img {
     width: 200px;
     margin-right: 25px;
-    border-radius: 2px;
+    border-radius: 50%;
   }
 
   .teammate-card-text {
