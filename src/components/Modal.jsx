@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Backdrop from "./Backdrop.jsx";
 import iconClose from "../assets/cerrar-icon.png";
+import logoPelota from "../assets/logo-pelota.webp"
 const dropIn = {
   hidden: {
     y: "-100vh",
@@ -42,7 +43,7 @@ const Modal = ({ teammate, handleClose }) => {
 
         <div className="teammate-card-container">
           <div className="teammate-card-image">
-            <img src={teammate.image} alt={`Imagen de ${teammate.name}`}/>
+            <img src={teammate.image ? teammate.image : logoPelota } alt={`Imagen de ${teammate.name}`}/>
           </div>
           <div className="teammate-card-text">
             <h3>Conocé a {teammate.apodo}</h3>

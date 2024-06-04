@@ -24,7 +24,7 @@ export const team = [
     name: "Juan I. Huber",
     apodo: "Juani",
     cargo: "Lawyer & Business Development",
-    image: logoPelota,
+    image: "",
     text: "Juan Ignacio Huber, abogado, especialista en derecho deportivo.\n\nCursó la carrera de abogacía en la Universidad Nacional de Rosario y se recibió de abogado en el año 2020.\n\nSe inició en el fútbol en el año 2021 y realizó un máster en derecho del deporte en la Universidad Austral de Buenos Aires, el cual finalizó en el año 2022.\n\nActualmente se desempeña como agente en nuestra empresa.",
   },
   {
@@ -32,7 +32,7 @@ export const team = [
     name: "Facundo Castillon",
     apodo: "Facu",
     cargo: "Analist & Head of Scouting",
-    image: logoPelota,
+    image: "",
     text: "Facundo Castillon ex futbolista, se desempeñó en clubes como Racing Club, Godoy Cruz, Lanús, Getafe de España, entre otros.\n\nSe retiró de la actividad profesional en el año 2022 y a mediados de ese mismo año se sumó a nuestra empresa.\n\nSu presencia resulta clave para nuestra empresa, aportando diariamente a nuestros deportistas su conocimiento y experiencia de 15 años de futbolista profesional.",
   },
   {
@@ -40,7 +40,7 @@ export const team = [
     name: "Javier Campora",
     apodo: "Javier",
     cargo: "Football Analist & Player Service",
-    image: logoPelota,
+    image: "",
     text: "",
   },
 ];
