@@ -11,7 +11,7 @@ import { team } from "../components/team";
 import { AnimatePresence } from "framer-motion";
 import Modal from "../components/Modal";
 import { useState } from "react";
-import logoPelota from "../assets/logo-pelota-azul.webp"
+import logoPelota from "../assets/logo-pelota-azul.webp";
 
 export default function HomePage() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -139,7 +139,7 @@ export default function HomePage() {
               {team.slice(3, 5).map((teammate) => (
                 <Teammate
                   key={teammate.id}
-                  image={teammate.image ? teammate.image : logoPelota }
+                  image={teammate.image ? teammate.image : logoPelota}
                   name={teammate.name}
                   cargo={teammate.cargo}
                   onClick={() => handleTeammateClick(teammate)}

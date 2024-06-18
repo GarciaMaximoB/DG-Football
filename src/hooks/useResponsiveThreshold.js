@@ -6,21 +6,17 @@ const useResponsiveThreshold = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
-        setThreshold(0.15); // Valor para pantallas pequeñas
+        setThreshold(0.15);
       } else if (window.innerWidth < 1024) {
-        setThreshold(0.15); // Valor para pantallas medianas
+        setThreshold(0.15);
       } else {
-        setThreshold(0.5); // Valor para pantallas grandes
+        setThreshold(0.5);
       }
     };
 
-    // Escuchar cambios de tamaño de la ventana
     window.addEventListener("resize", handleResize);
-
-    // Establecer el valor inicial
     handleResize();
 
-    // Limpiar el event listener al desmontar el componente
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
