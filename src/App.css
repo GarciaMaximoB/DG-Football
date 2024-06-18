@@ -245,7 +245,7 @@
 
 .modal {
   width: clamp(95%, 500px, 90%);
-  height: min(100%, 90%);
+  height: min(85%, 90%);
   margin: auto;
   padding: 50px 40px;
   border-radius: 12px;
@@ -274,7 +274,7 @@
 
 .teammate-card-image img {
   width: 350px;
-  margin-right: 50px;
+  margin-right: 100px;
   border-radius: 50%;
  
 }

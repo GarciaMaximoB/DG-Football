@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Backdrop from "./Backdrop.jsx";
 import iconClose from "../assets/cerrar-icon.png";
-import logoPelota from "../assets/logo-pelota.webp"
+import logoPelota from "../assets/logo-pelota.webp";
 const dropIn = {
   hidden: {
     y: "-100vh",
@@ -42,14 +42,23 @@ const Modal = ({ teammate, handleClose }) => {
         />
 
         <div className="teammate-card-container">
-          <div className={teammate.image ? 'teammate-card-image bg' : 'teammate-card-image'}>
-            <img src={teammate.image ? teammate.image : logoPelota } alt={`Imagen de ${teammate.name}`}/>
+          <div
+            className={
+              teammate.image ? "teammate-card-image bg" : "teammate-card-image"
+            }
+          >
+            <img
+              src={teammate.image ? teammate.image : logoPelota}
+              alt={`Imagen de ${teammate.name}`}
+            />
           </div>
           <div className="teammate-card-text">
             <h3>Conocé a {teammate.apodo}</h3>
             <p>
               {teammate.text.split("\n").map((paragraph, index) => (
-                <p key={index} className="parrafo-teammate">{paragraph}</p>
+                <p key={index} className="parrafo-teammate">
+                  {paragraph}
+                </p>
               ))}
             </p>
           </div>
