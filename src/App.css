@@ -143,11 +143,12 @@
   font-size: 44px;
   line-height: 1.5em;
   color: #a48371;
+  margin-bottom: 20px;
 }
 
 .about-container .about-div p {
   font-family: "GothamLight", sans-serif;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.5em;
   color: #0c2340;
 }
@@ -224,6 +225,7 @@
 
 .cargo-teammate {
   color: rgba(26, 27, 31, 0.6);
+  font-size: 16px;
 }
 
 /* MODAL */
@@ -276,7 +278,6 @@
   width: 350px;
   margin-right: 100px;
   border-radius: 50%;
- 
 }
 
 .bg img {
@@ -362,7 +363,7 @@
 
 .players-section {
   margin-top: 200px;
-  height: 750px;
+  min-height:90vh;
 }
 
 .players-section h1 {

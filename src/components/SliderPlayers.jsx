@@ -1,20 +1,18 @@
-// import Swiper core and required modules
 import { Navigation, Pagination, A11y, EffectCoverflow } from "swiper/modules";
 import { Players } from "./Players";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-coverflow";
-
+import "react-lazy-load-image-component/src/effects/blur.css";
 const customStyles = {
   swiperButtonNext: {
-    color: "#e7c4a2", // Cambia el color de la flecha siguiente
+    color: "#e7c4a2",
   },
   swiperButtonPrev: {
-    color: "#e7c4a2", // Cambia el color de la flecha anterior
+    color: "#e7c4a2",
   },
 };
 
@@ -23,10 +21,26 @@ const PlayerSocialLinks = ({ player }) => {
 
   return (
     <div className="player-social">
-      {redes.transferMarkt && <a href={redes.transferMarkt} target="_blank" rel="noopener noreferrer">TransferMarket</a>}
-      {redes.soccerWay && <a href={redes.soccerWay} target="_blank" rel="noopener noreferrer">soccerway</a>}
-      {redes.Youtube && <a href={redes.Youtube} target="_blank" rel="noopener noreferrer">youtube</a>}
-      {redes.wyscout && <a href={redes.wyscout} target="_blank" rel="noopener noreferrer">wyscout</a>}
+      {redes.transferMarkt && (
+        <a href={redes.transferMarkt} target="_blank" rel="noopener noreferrer">
+          TransferMarket
+        </a>
+      )}
+      {redes.soccerWay && (
+        <a href={redes.soccerWay} target="_blank" rel="noopener noreferrer">
+          soccerway
+        </a>
+      )}
+      {redes.Youtube && (
+        <a href={redes.Youtube} target="_blank" rel="noopener noreferrer">
+          youtube
+        </a>
+      )}
+      {redes.wyscout && (
+        <a href={redes.wyscout} target="_blank" rel="noopener noreferrer">
+          wyscout
+        </a>
+      )}
     </div>
   );
 };
@@ -74,9 +88,12 @@ export default function SliderPlayers() {
         <SwiperSlide key={index} virtualIndex={index} className="player">
           <img src={player.image} alt={`Foto de ${player.name}`} />
           <p>{player.name}</p>
-
           <div className="player-overlay">
-            <img src={player.team} alt={`Escudo de ${player.team}`} className="escudo" />
+            <img
+              src={player.team}
+              alt={`Escudo de ${player.team}`}
+              className="escudo"
+            />
             <PlayerSocialLinks player={player} />
           </div>
         </SwiperSlide>
