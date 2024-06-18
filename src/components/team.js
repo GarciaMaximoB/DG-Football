@@ -1,5 +1,7 @@
 import andresImage from "../assets/equipo/andres-taberna.webp";
 import juanImage from "../assets/equipo/juan-davola.webp";
+import juaniImage from "../assets/equipo/juan-huber.webp";
+import facundoImage from "../assets/equipo/facundo-castillon.webp";
 
 export const team = [
   {
@@ -23,7 +25,7 @@ export const team = [
     name: "Juan I. Huber",
     apodo: "Juani",
     cargo: "Lawyer & Business Development",
-    image: "",
+    image: juaniImage,
     text: "Juan Ignacio Huber, abogado, especialista en derecho deportivo.\n\nCursó la carrera de abogacía en la Universidad Nacional de Rosario y se recibió de abogado en el año 2020.\n\nSe inició en el fútbol en el año 2021 y realizó un máster en derecho del deporte en la Universidad Austral de Buenos Aires, el cual finalizó en el año 2022.\n\nActualmente se desempeña como agente en nuestra empresa.",
   },
   {
@@ -31,7 +33,7 @@ export const team = [
     name: "Facundo Castillon",
     apodo: "Facu",
     cargo: "Analist & Head of Scouting",
-    image: "",
+    image: facundoImage,
     text: "Facundo Castillon ex futbolista, se desempeñó en clubes como Racing Club, Godoy Cruz, Lanús, Getafe de España, entre otros.\n\nSe retiró de la actividad profesional en el año 2022 y a mediados de ese mismo año se sumó a nuestra empresa.\n\nSu presencia resulta clave para nuestra empresa, aportando diariamente a nuestros deportistas su conocimiento y experiencia de 15 años de futbolista profesional.",
   },
   {
@@ -40,6 +42,6 @@ export const team = [
     apodo: "Javier",
     cargo: "Football Analist & Player Service",
     image: "",
-    text: "",
+    text: "Javier Campora ex futbolista, dos veces goleador de la primera división del fútbol Argentino, se desempeñó también en clubes del exterior como Cruz Azul, Puebla (México), Colo Colo (Chile), Aris Salónica (Grecia), entre otros. \n\nSu habilidad goleadora lo ha convertido en un jugador muy respetado en el ámbito futbolístico. \n\nDurante su trayectoria, ha demostrado su compromiso, dedicación y pasión por el deporte, lo que lo ha llevado a ser un referente en cada equipo en el que ha jugado y hoy en día en nuestra empresa.",
   },
 ];
