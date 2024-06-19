@@ -23,7 +23,7 @@ const PlayerSocialLinks = ({ player }) => {
     <div className="player-social">
       {redes.transferMarkt && (
         <a href={redes.transferMarkt} target="_blank" rel="noopener noreferrer">
-          TransferMarket
+          TransferMarkt
         </a>
       )}
       {redes.soccerWay && (
