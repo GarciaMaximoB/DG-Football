@@ -172,7 +172,7 @@ export const Players = [
     redes: {
       transferMarkt:
         " https://www.transfermarkt.com.ar/walter-nunez/profil/spieler/1020838",
-      soccerWay: "https://www.soccerway.com/",
+      soccerWay: "https://int.soccerway.com/players/walter-nunez/841577/",
       Youtube: "https://youtu.be/rluWxqL5yBk",
       wyscout: "https://www.wyscout.com/enzo-gaggi",
     },
