@@ -2,6 +2,7 @@ import andresImage from "../assets/equipo/andres-taberna.webp";
 import juanImage from "../assets/equipo/juan-davola.webp";
 import juaniImage from "../assets/equipo/juan-huber.webp";
 import facundoImage from "../assets/equipo/facundo-castillon.webp";
+import javierImage from "../assets/equipo/javier-campora.webp"
 
 export const team = [
   {
@@ -41,7 +42,7 @@ export const team = [
     name: "Javier Campora",
     apodo: "Javier",
     cargo: "Football Analist & Player Service",
-    image: "",
+    image: javierImage,
     text: "Javier Campora ex futbolista, dos veces goleador de la primera división del fútbol Argentino, se desempeñó también en clubes del exterior como Cruz Azul, Puebla (México), Colo Colo (Chile), Aris Salónica (Grecia), entre otros. \n\nSu habilidad goleadora lo ha convertido en un jugador muy respetado en el ámbito futbolístico. \n\nDurante su trayectoria, ha demostrado su compromiso, dedicación y pasión por el deporte, lo que lo ha llevado a ser un referente en cada equipo en el que ha jugado y hoy en día en nuestra empresa.",
   },
 ];
