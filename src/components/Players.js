@@ -12,6 +12,7 @@ import cavalleriImage from "../assets/players/matias-cavalleri.webp";
 import tisseraImage from "../assets/players/matias-tissera.webp";
 import nunezImage from "../assets/players/walter-nuñez.webp";
 import ramirezImage from "../assets/players/lisandro-ramirez.webp";
+import sandovalImage from "../assets/players/tomas-sandoval.webp";
 
 import cobreloa from "../assets/escudos/cobreloa.webp";
 import gimnasiaMendoza from "../assets/escudos/gimnasia-mendoza.webp";
@@ -23,10 +24,12 @@ import sanlorenzo from "../assets/escudos/sanlorenzo.webp";
 // import temperley from "../assets/escudos/temperley.webp"
 import unionLaCalera from "../assets/escudos/union-la-calera.webp";
 import delfin from "../assets/escudos/delfin.webp";
-import racing from "../assets/escudos/racing.webp";
+// import racing from "../assets/escudos/racing.webp";
 import godoycruz from "../assets/escudos/godoycruz.webp";
 import rosariocentral from "../assets/escudos/rosariocentral.webp";
 import union from "../assets/escudos/union.webp";
+import grau from "../assets/escudos/atleticoGrau.webp";
+import centralCordoba from "../assets/escudos/central-cordoba.webp";
 
 export const Players = [
   {
@@ -39,7 +42,7 @@ export const Players = [
       soccerWay:
         "https://es.soccerway.com/players/manuel-vicente-capasso/401403/",
       Youtube: " https://www.youtube.com/watch?v=IBn_nT0It90&t=17s",
-      wyscout: "https://www.wyscout.com/enzo-gaggi",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/370438",
     },
   },
   {
@@ -51,19 +54,19 @@ export const Players = [
         "https://www.transfermarkt.com/gaston-campi/profil/spieler/292174",
       soccerWay: "https://es.soccerway.com/players/gaston-matias-campi/313811/",
       Youtube: "https://youtu.be/QBK9rSTA-bk?si=0rTHltJwazVx5If3",
-      wyscout: "#",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/278775 ",
     },
   },
   {
     name: "Ivan Pillud",
-    team: racing,
+    team: centralCordoba,
     image: pilludImage,
     redes: {
       transferMarkt:
         "https://www.transfermarkt.com/ivan-pillud/profil/spieler/77720",
       soccerWay: "https://es.soccerway.com/players/ivan-alexis-pillud/51434/",
       Youtube: "https://youtu.be/AYPC5HlotHU?si=R7UYxuZgcfxUI5fn",
-      wyscout: "https://www.wyscout.com/enzo-gaggi",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/86296 ",
     },
   },
   {
@@ -75,7 +78,7 @@ export const Players = [
         "https://www.transfermarkt.com/matias-cavalleri/profil/spieler/549235",
       soccerWay: "https://es.soccerway.com/players/matias-cavalleri/532502/",
       Youtube: " https://www.youtube.com/watch?v=st79hXQ7qg0&t=62s",
-      wyscout: "https://www.wyscout.com/enzo-gaggi",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/357116 ",
     },
   },
   {
@@ -87,7 +90,7 @@ export const Players = [
         "https://www.transfermarkt.es/enzo-gaggi/profil/spieler/538337",
       soccerWay: "https://es.soccerway.com/players/enzo-gaggi/485351/",
       Youtube: " https://youtu.be/Px0JK16957c?si=nNVuRN2P-JquI02C",
-      wyscout: "#",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/507599 ",
     },
   },
   {
@@ -99,10 +102,9 @@ export const Players = [
         "https://www.transfermarkt.com/facundo-nadalin/profil/spieler/554798",
       soccerWay: "https://es.soccerway.com/players/facundo-nadalin/526523/",
       Youtube: "https://www.youtube.com/@dgfootball.agency",
-      wyscout: "#",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/551666 ",
     },
   },
-
   {
     name: "Joaquin Brizuela",
     team: godoycruz,
@@ -111,7 +113,7 @@ export const Players = [
       transferMarkt: "#",
       soccerWay: "#",
       Youtube: ": https://youtu.be/3-9nsZXv9iA?si=XXvsZ6aMkQwVjLIy",
-      wyscout: "#",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/894374 ",
     },
   },
   {
@@ -124,10 +126,9 @@ export const Players = [
       soccerWay:
         "https://es.soccerway.com/players/luca-valentino-raffin/931281/",
       Youtube: "https://youtu.be/DqxmkEvPvWI?si=10CC1N5lugt5Gpda",
-      wyscout: "https://www.wyscout.com/enzo-gaggi",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/894797 ",
     },
   },
-
   {
     name: "Marco Borgnino",
     team: cobreloa,
@@ -137,10 +138,21 @@ export const Players = [
         "https://www.transfermarkt.com/marco-borgnino/profil/spieler/458171",
       soccerWay: "https://es.soccerway.com/players/marco-bognino/446871/",
       Youtube: "https://youtu.be/VgVXC0xM3CE",
-      wyscout: "https://www.wyscout.com/enzo-gaggi",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/437205 ",
     },
   },
-
+  {
+    name: "Tomás Sandoval",
+    team: grau,
+    image: sandovalImage,
+    redes: {
+      transferMarkt:
+        "https://www.transfermarkt.com/tomas-sandoval/profil/spieler/437964",
+      soccerWay: "https://int.soccerway.com/players/tomas-sandoval/443581/",
+      Youtube: "https://www.youtube.com/watch?v=ZYDxZm5XVC4",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/433351",
+    },
+  },
   {
     name: "Tomas Moschion",
     team: imabari,
@@ -151,7 +163,7 @@ export const Players = [
       soccerWay: "https://es.soccerway.com/players/tomas-moschion/580026/",
       Youtube:
         "https://www.youtube.com/watch?v=8PqIMEz5_EY&pp=ygUOdG9tYXMgbW9zY2hpb24%3D",
-      wyscout: "https://www.wyscout.com/enzo-gaggi",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/591525 ",
     },
   },
   {
@@ -162,7 +174,7 @@ export const Players = [
       transferMarkt: "#",
       soccerWay: "#",
       Youtube: "#",
-      wyscout: "#",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/896354 ",
     },
   },
   {
@@ -174,10 +186,9 @@ export const Players = [
         " https://www.transfermarkt.com.ar/walter-nunez/profil/spieler/1020838",
       soccerWay: "https://int.soccerway.com/players/walter-nunez/841577/",
       Youtube: "https://youtu.be/rluWxqL5yBk",
-      wyscout: "https://www.wyscout.com/enzo-gaggi",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/831215 ",
     },
   },
-
   {
     name: "Matias Tissera",
     team: ludogorets,
@@ -187,7 +198,7 @@ export const Players = [
         " https://www.transfermarkt.com/matias-tissera/profil/spieler/503001",
       soccerWay: "https://es.soccerway.com/players/matias-tissera/478312/",
       Youtube: " https://youtu.be/ff68nEcBlUA",
-      wyscout: "https://www.wyscout.com/enzo-gaggi",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/497930 ",
     },
   },
 ];
