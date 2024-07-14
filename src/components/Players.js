@@ -13,6 +13,7 @@ import tisseraImage from "../assets/players/matias-tissera.webp";
 import nunezImage from "../assets/players/walter-nuñez.webp";
 import ramirezImage from "../assets/players/lisandro-ramirez.webp";
 import sandovalImage from "../assets/players/tomas-sandoval.webp";
+import dacampoImage from "../assets/players/nicolas-dacampo.webp";
 
 import cobreloa from "../assets/escudos/cobreloa.webp";
 import gimnasiaMendoza from "../assets/escudos/gimnasia-mendoza.webp";
@@ -21,7 +22,7 @@ import ludogorets from "../assets/escudos/ludogorets.webp";
 import montevideoCity from "../assets/escudos/montevideocity.webp";
 import olimpia from "../assets/escudos/olimpia.webp";
 import sanlorenzo from "../assets/escudos/sanlorenzo.webp";
-// import temperley from "../assets/escudos/temperley.webp"
+import temperley from "../assets/escudos/temperley.webp";
 import unionLaCalera from "../assets/escudos/union-la-calera.webp";
 import delfin from "../assets/escudos/delfin.webp";
 // import racing from "../assets/escudos/racing.webp";
@@ -101,8 +102,21 @@ export const Players = [
       transferMarkt:
         "https://www.transfermarkt.com/facundo-nadalin/profil/spieler/554798",
       soccerWay: "https://es.soccerway.com/players/facundo-nadalin/526523/",
-      Youtube: "https://www.youtube.com/@dgfootball.agency",
+      Youtube: "https://youtu.be/bY53dnfbcI4?si=d3VS2B24LH-LM338",
       wyscout: "https://wyscout.hudl.com/app/?/#/players/551666 ",
+    },
+  },
+  {
+    name: "Nicolas Da Campo",
+    team: temperley,
+    image: dacampoImage,
+    redes: {
+      transferMarkt:
+        "https://www.transfermarkt.com/hernan-da-campo/profil/spieler/347750",
+      soccerWay:
+        "https://int.soccerway.com/players/hernan-nicolas-da-campo/391031/",
+      Youtube: "https://www.youtube.com/watch?v=9x--68vd4xs",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/354542",
     },
   },
   {
