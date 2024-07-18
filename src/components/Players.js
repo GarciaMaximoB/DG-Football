@@ -42,7 +42,7 @@ export const Players = [
         "https://www.transfermarkt.com/manuel-capasso/profil/spieler/653152",
       soccerWay:
         "https://es.soccerway.com/players/manuel-vicente-capasso/401403/",
-      Youtube: " https://www.youtube.com/watch?v=IBn_nT0It90&t=17s",
+      Youtube: "https://www.youtube.com/watch?v=IBn_nT0It90&t=17s",
       wyscout: "https://wyscout.hudl.com/app/?/#/players/370438",
     },
   },
@@ -55,7 +55,7 @@ export const Players = [
         "https://www.transfermarkt.com/gaston-campi/profil/spieler/292174",
       soccerWay: "https://es.soccerway.com/players/gaston-matias-campi/313811/",
       Youtube: "https://youtu.be/QBK9rSTA-bk?si=0rTHltJwazVx5If3",
-      wyscout: "https://wyscout.hudl.com/app/?/#/players/278775 ",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/278775",
     },
   },
   {
@@ -126,7 +126,7 @@ export const Players = [
     redes: {
       transferMarkt: "#",
       soccerWay: "#",
-      Youtube: ": https://youtu.be/3-9nsZXv9iA?si=XXvsZ6aMkQwVjLIy",
+      Youtube: "https://youtu.be/3-9nsZXv9iA?si=XXvsZ6aMkQwVjLIy",
       wyscout: "https://wyscout.hudl.com/app/?/#/players/894374 ",
     },
   },
@@ -212,7 +212,7 @@ export const Players = [
         " https://www.transfermarkt.com/matias-tissera/profil/spieler/503001",
       soccerWay: "https://es.soccerway.com/players/matias-tissera/478312/",
       Youtube: " https://youtu.be/ff68nEcBlUA",
-      wyscout: "https://wyscout.hudl.com/app/?/#/players/497930 ",
+      wyscout: "https://wyscout.hudl.com/app/?/#/players/497930",
     },
   },
 ];

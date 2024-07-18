@@ -465,6 +465,11 @@
 
 .swiper-slide img {
   height: 400px;
+  margin-bottom: 0;
+  /* mask-image: linear-gradient(
+    black 85%,
+    transparent
+  ) ; */
 }
 .swiper-slide p {
   font-size: 48px;
