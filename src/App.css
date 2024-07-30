@@ -363,7 +363,7 @@
 
 .players-section {
   margin-top: 200px;
-  min-height:90vh;
+  min-height: 90vh;
 }
 
 .players-section h1 {
@@ -466,10 +466,7 @@
 .swiper-slide img {
   height: 400px;
   margin-bottom: 0;
-  /* mask-image: linear-gradient(
-    black 85%,
-    transparent
-  ) ; */
+  mask-image: linear-gradient(black 85%, transparent);
 }
 .swiper-slide p {
   font-size: 48px;

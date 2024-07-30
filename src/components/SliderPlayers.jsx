@@ -21,7 +21,7 @@ import client, { urlFor } from "../sanityClient";
 
 const PlayerSocialLinks = ({ player }) => {
   const { transfermarkt, soccerway, youtube, wyscout } = player;
-  console.log(player);
+  // console.log(player);
 
   return (
     <div className="player-social">
@@ -32,17 +32,17 @@ const PlayerSocialLinks = ({ player }) => {
       )}
       {soccerway && (
         <a href={soccerway} target="_blank" rel="noopener noreferrer">
-          soccerway
+          Soccerway
         </a>
       )}
       {youtube && (
         <a href={youtube} target="_blank" rel="noopener noreferrer">
-          youtube
+          Youtube
         </a>
       )}
       {wyscout && (
         <a href={wyscout} target="_blank" rel="noopener noreferrer">
-          wyscout
+          Wyscout
         </a>
       )}
     </div>
