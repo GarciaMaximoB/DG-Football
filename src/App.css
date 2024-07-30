@@ -1170,6 +1170,7 @@
   }
 
   .swiper-slide img {
+    height: auto;
     max-height: 100vh;
     /* width: 80vw; */
     max-width: 80vw;
