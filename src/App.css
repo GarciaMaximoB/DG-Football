@@ -1170,8 +1170,9 @@
   }
 
   .swiper-slide img {
-    height: auto;
-    width: 80vw;
+    max-height: 100vh;
+    /* width: 80vw; */
+    max-width: 80vw;
   }
   .swiper-slide p {
     font-size: 28px;
