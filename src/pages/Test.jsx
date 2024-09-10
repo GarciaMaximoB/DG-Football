@@ -14,7 +14,6 @@ export default function TestPage() {
   return (
     <div className="container-test">
       <div className="container-test-container">
-        <h1>Jugadores</h1>
         {jugadores.map((jugador, index) => (
           <div key={index}>
             <h2>{jugador.nombre}</h2>
