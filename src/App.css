@@ -452,7 +452,6 @@
 
 .swiper-slide {
   text-align: center;
-  height: auto;
   margin-top: 2%;
   filter: brightness(0.3) blur(3px);
 }
@@ -464,7 +463,7 @@
 }
 
 .swiper-slide img {
-  height: 50vh;
+  width: 20vw;
   margin-bottom: 0;
   mask-image: linear-gradient(black 85%, transparent);
 }
