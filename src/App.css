@@ -400,12 +400,6 @@
   height: 100%;
 }
 
-.player.swiper-slide-next:hover .player-overlay {
-  opacity: 1; /* Mostrar overlay al hacer hover */
-  transform: scale(1);
-  transition: all ease 0.5s;
-}
-
 .player-social {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -450,13 +444,20 @@
   height: auto;
 }
 
-.swiper-slide {
+.swiper-slide-active:hover .player-overlay {
+  opacity: 1; /* Mostrar overlay al hacer hover */
+  transform: scale(1);
+  transition: all ease 0.5s;
+}
+
+.swiper-slide{
   text-align: center;
   margin-top: 2%;
   filter: brightness(0.3) blur(3px);
 }
 
-.swiper-slide-next {
+.swiper-slide-active{
+  text-align: center;
   filter: brightness(0.9);
   cursor: pointer;
   transition: all ease 0.5s;

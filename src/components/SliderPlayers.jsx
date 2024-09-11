@@ -90,6 +90,7 @@ export default function SliderPlayers() {
           spaceBetween: 0,
         },
       }}
+      centeredSlides={true}
     >
       <div
         className="swiper-button-next"
@@ -97,7 +98,10 @@ export default function SliderPlayers() {
       ></div>
       {jugadores.map((jugador, index) => (
         <SwiperSlide key={index} virtualIndex={index} className="player">
-          {jugador.imagenJugador && jugador.imagenJugador.asset && (
+          {({ isActive }) => (
+            <div>Current slide is {isActive ? "active" : "not active"}</div>
+          )}
+         {jugador.imagenJugador && jugador.imagenJugador.asset && (
             <img
               src={urlFor(jugador.imagenJugador).url()}
               alt={jugador.nombre}
@@ -113,7 +117,7 @@ export default function SliderPlayers() {
               />
             )}
             <PlayerSocialLinks player={jugador} />
-          </div>
+          </div>  
         </SwiperSlide>
       ))}
       <div
