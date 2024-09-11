@@ -21,8 +21,6 @@ import client, { urlFor } from "../sanityClient";
 
 const PlayerSocialLinks = ({ player }) => {
   const { transfermarkt, soccerway, youtube, wyscout } = player;
-  // console.log(player);
-
   return (
     <div className="player-social">
       {transfermarkt && (
@@ -66,7 +64,6 @@ export default function SliderPlayers() {
       className="myCustomSwiper"
       modules={[Navigation, Pagination, A11y, EffectCoverflow]}
       speed={550}
-      spaceBetween={100}
       slidesPerView={3}
       navigation={{
         nextEl: ".swiper-button-next",
