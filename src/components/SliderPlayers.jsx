@@ -64,7 +64,7 @@ export default function SliderPlayers() {
       className="myCustomSwiper"
       modules={[Navigation, Pagination, A11y, EffectCoverflow]}
       speed={550}
-      slidesPerView={3}
+      slidesPerView={2}
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

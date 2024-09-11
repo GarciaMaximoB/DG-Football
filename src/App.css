@@ -357,7 +357,7 @@
 /*PLAYERS PAGE*/
 
 .swiper {
-  width: 100vw;
+  width: auto;
   height: auto;
 }
 
