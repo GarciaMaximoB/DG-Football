@@ -872,7 +872,9 @@
   }
 
   .swiper-slide img {
-    height: 500px;
+    width: 45vw;
+    height: auto;
+    max-height: 50%;
   }
   .swiper-slide p {
     font-size: 50px;
