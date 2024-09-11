@@ -464,7 +464,7 @@
 }
 
 .swiper-slide img {
-  width: 20vw;
+  height: 50vh;
   margin-bottom: 0;
   mask-image: linear-gradient(black 85%, transparent);
 }
@@ -873,16 +873,13 @@
   }
 
   .swiper-slide img {
-    width: 45vw;
-    height: auto;
-    max-height: 50%;
+    height: 50vh;
   }
   .swiper-slide p {
     font-size: 50px;
   }
 
   /*TRANSFERS PAGE*/
-
   .transfer-section {
     margin-top: 200px;
     padding-left: 20px;
@@ -1162,7 +1159,7 @@
 
   .players-section {
     margin-top: 150px;
-    height: 80vh;
+    height: 100vh;
   }
 
   .players-section h1 {
@@ -1173,7 +1170,7 @@
 
   .swiper-slide img {
     height: auto;
-    width: 80vw;
+    width: 45vh;
   }
   .swiper-slide p {
     font-size: 28px;

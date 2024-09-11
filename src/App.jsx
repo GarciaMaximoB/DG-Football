@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PlayersPage from "./pages/PlayersPage";
 import TransferPage from "./pages/TransferPage";
-import TestPage from "./pages/Test";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route path="/players" element={<PlayersPage />} />
           <Route path="/transfers" element={<TransferPage />} />
-          <Route path="/test" element={<TestPage />} />
         </Routes>
         <Footer />
       </div>
