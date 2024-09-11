@@ -95,6 +95,7 @@ export default function SliderPlayers() {
       watchSlidesVisibility={true}
       observer={true} // Activa la observación de cambios en Swiper
       observeParents={true} // Observa cambios en el contenedor de Swiper
+      resizeObserver={true}
     >
       <div
         className="swiper-button-next"
