@@ -91,6 +91,10 @@ export default function SliderPlayers() {
         },
       }}
       centeredSlides={true}
+      watchSlidesProgress={true}
+      watchSlidesVisibility={true}
+      observer={true} // Activa la observación de cambios en Swiper
+      observeParents={true} // Observa cambios en el contenedor de Swiper
     >
       <div
         className="swiper-button-next"
@@ -101,7 +105,7 @@ export default function SliderPlayers() {
           {({ isActive }) => (
             <div>Current slide is {isActive ? "active" : "not active"}</div>
           )}
-         {jugador.imagenJugador && jugador.imagenJugador.asset && (
+          {jugador.imagenJugador && jugador.imagenJugador.asset && (
             <img
               src={urlFor(jugador.imagenJugador).url()}
               alt={jugador.nombre}
@@ -117,7 +121,7 @@ export default function SliderPlayers() {
               />
             )}
             <PlayerSocialLinks player={jugador} />
-          </div>  
+          </div>
         </SwiperSlide>
       ))}
       <div
