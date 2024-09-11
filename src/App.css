@@ -357,13 +357,13 @@
 /*PLAYERS PAGE*/
 
 .swiper {
-  width: auto;
+  width: 100vw;
   height: auto;
 }
 
 .players-section {
   margin-top: 12%;
-  min-height: 120vh;
+  height: 100vh;
 }
 
 .players-section h1 {
