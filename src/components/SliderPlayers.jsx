@@ -88,7 +88,7 @@ export default function SliderPlayers() {
         },
         1024: {
           slidesPerView: 2,
-          spaceBetween: 50,
+          spaceBetween: 0,
         },
       }}
     >
