@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-coverflow";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { useEffect, useState } from "react";
+import { fetchPlayers } from "../contentfulClient";
 const customStyles = {
   swiperButtonNext: {
     color: "#e7c4a2",
@@ -17,26 +19,30 @@ const customStyles = {
 };
 
 const PlayerSocialLinks = ({ player }) => {
-  const { redes } = player;
+  const { fields } = player;
   return (
     <div className="player-social">
-      {redes.transferMarkt && (
-        <a href={redes.transferMarkt} target="_blank" rel="noopener noreferrer">
+      {fields.transferMarkt && (
+        <a
+          href={fields.transferMarkt}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           TransferMarkt
         </a>
       )}
-      {redes.soccerWay && (
-        <a href={redes.soccerWay} target="_blank" rel="noopener noreferrer">
+      {fields.soccerway && (
+        <a href={fields.soccerway} target="_blank" rel="noopener noreferrer">
           Soccerway
         </a>
       )}
-      {redes.Youtube && (
-        <a href={redes.Youtube} target="_blank" rel="noopener noreferrer">
+      {fields.youtube && (
+        <a href={fields.youtube} target="_blank" rel="noopener noreferrer">
           Youtube
         </a>
       )}
-      {redes.wyscout && (
-        <a href={redes.wyscout} target="_blank" rel="noopener noreferrer">
+      {fields.wyscout && (
+        <a href={fields.wyscout} target="_blank" rel="noopener noreferrer">
           Wyscout
         </a>
       )}
@@ -45,6 +51,15 @@ const PlayerSocialLinks = ({ player }) => {
 };
 
 export default function SliderPlayers() {
+  const [players, setPlayers] = useState([]);
+
+  useEffect(() => {
+    const getPlayers = async () => {
+      const fetchedPlayers = await fetchPlayers();
+      setPlayers(fetchedPlayers);
+    };
+    getPlayers();
+  }, []);
   // const [jugadores, setJugadores] = useState([]);
 
   // useEffect(() => {
@@ -57,6 +72,21 @@ export default function SliderPlayers() {
   // }, []);
 
   return (
+    // <Swiper spaceBetween={50} slidesPerView={3}>
+    //   {players.map((player) => (
+    //     <SwiperSlide key={player.sys.id}>
+    //       <div>
+    //         <h2>{player.fields.nombre}</h2>
+    //         <img
+    //           src={player.fields.imagen.fields.file.url}
+    //           alt={player.fields.nombre}
+    //           style={{ width: "100%" }}
+    //         />
+    //         <p>{player.fields.position}</p>
+    //       </div>
+    //     </SwiperSlide>
+    //   ))}
+    // </Swiper>
     <Swiper
       className="myCustomSwiper"
       modules={[Navigation, Pagination, A11y, EffectCoverflow]}
@@ -76,15 +106,15 @@ export default function SliderPlayers() {
       breakpoints={{
         320: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 100,
         },
         640: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 1000,
         },
         1024: {
           slidesPerView: 3,
-          spaceBetween: 0,
+          spaceBetween:  100,
         },
       }}
       centeredSlides={true}
@@ -98,13 +128,17 @@ export default function SliderPlayers() {
         className="swiper-button-next"
         style={customStyles.swiperButtonNext}
       ></div>
-      {Players.map((player, index) => (
+      {players.map((player, index) => (
         <SwiperSlide key={index} virtualIndex={index} className="player">
-          <img src={player.image} alt={`Foto de ${player.name}`} className="player-image"/>
-          <p>{player.name}</p>
+          <img
+            src={player.fields.imagen.fields.file.url}
+            alt={`Foto de ${player.fields.nombre}`}
+            className="player-image"
+          />
+          <p>{player.fields.nombre}</p>
           <div className="player-overlay">
             <img
-              src={player.team}
+              src={player.fields.escudo.fields.file.url}
               alt={`Escudo de ${player.team}`}
               className="escudo"
             />
