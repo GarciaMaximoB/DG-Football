@@ -53,6 +53,8 @@ const PlayerSocialLinks = ({ player }) => {
 export default function SliderPlayers() {
   const [players, setPlayers] = useState([]);
 
+  console.log(window.innerWidth);
+
   useEffect(() => {
     const getPlayers = async () => {
       const fetchedPlayers = await fetchPlayers();
@@ -110,11 +112,11 @@ export default function SliderPlayers() {
         },
         640: {
           slidesPerView: 1,
-          spaceBetween: 1000,
+          spaceBetween: 100,
         },
         1024: {
           slidesPerView: 3,
-          spaceBetween:  100,
+          spaceBetween: 100,
         },
       }}
       centeredSlides={true}
