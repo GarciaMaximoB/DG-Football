@@ -7,8 +7,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  transition: all 0.5s ease; /* Agregamos transición para un cambio suave */
-  z-index: 1000; /* Asegúrate de que el navbar esté por encima de otros elementos */
+  transition: all 0.5s ease;
+  z-index: 1000;
 }
 .navbar-logo {
   width: 50%;
@@ -450,24 +450,25 @@
   transition: all ease 0.5s;
 }
 
-.swiper-slide{
+.swiper-slide {
   text-align: center;
   margin-top: 2%;
   filter: brightness(0.3) blur(3px);
 }
 
-.swiper-slide-active{
+.swiper-slide-active {
   text-align: center;
   filter: brightness(0.9);
   cursor: pointer;
   transition: all ease 0.5s;
 }
 
-.swiper-slide img {
+.player-image {
   height: 50vh;
   margin-bottom: 0;
   mask-image: linear-gradient(black 85%, transparent);
 }
+
 .swiper-slide p {
   font-size: 48px;
   line-height: 1.5em;

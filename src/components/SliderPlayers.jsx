@@ -1,5 +1,5 @@
 import { Navigation, Pagination, A11y, EffectCoverflow } from "swiper/modules";
-// import { Players } from "./Players";
+import { Players } from "./Players";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,30 +16,27 @@ const customStyles = {
   },
 };
 
-import { useState, useEffect } from "react";
-import client, { urlFor } from "../sanityClient";
-
 const PlayerSocialLinks = ({ player }) => {
-  const { transfermarkt, soccerway, youtube, wyscout } = player;
+  const { redes } = player;
   return (
     <div className="player-social">
-      {transfermarkt && (
-        <a href={transfermarkt} target="_blank" rel="noopener noreferrer">
+      {redes.transferMarkt && (
+        <a href={redes.transferMarkt} target="_blank" rel="noopener noreferrer">
           TransferMarkt
         </a>
       )}
-      {soccerway && (
-        <a href={soccerway} target="_blank" rel="noopener noreferrer">
+      {redes.soccerWay && (
+        <a href={redes.soccerWay} target="_blank" rel="noopener noreferrer">
           Soccerway
         </a>
       )}
-      {youtube && (
-        <a href={youtube} target="_blank" rel="noopener noreferrer">
+      {redes.Youtube && (
+        <a href={redes.Youtube} target="_blank" rel="noopener noreferrer">
           Youtube
         </a>
       )}
-      {wyscout && (
-        <a href={wyscout} target="_blank" rel="noopener noreferrer">
+      {redes.wyscout && (
+        <a href={redes.wyscout} target="_blank" rel="noopener noreferrer">
           Wyscout
         </a>
       )}
@@ -48,16 +45,16 @@ const PlayerSocialLinks = ({ player }) => {
 };
 
 export default function SliderPlayers() {
-  const [jugadores, setJugadores] = useState([]);
+  // const [jugadores, setJugadores] = useState([]);
 
-  useEffect(() => {
-    client
-      .fetch(
-        '*[_type == "jugador"] | order(orden asc){orden, nombre, imagenJugador, imagenEscudo, soccerway, transfermarkt, youtube, wyscout}'
-      )
-      .then((data) => setJugadores(data))
-      .catch(console.error);
-  }, []);
+  // useEffect(() => {
+  //   client
+  //     .fetch(
+  //       '*[_type == "jugador"] | order(orden asc){orden, nombre, imagenJugador, imagenEscudo, soccerway, transfermarkt, youtube, wyscout}'
+  //     )
+  //     .then((data) => setJugadores(data))
+  //     .catch(console.error);
+  // }, []);
 
   return (
     <Swiper
@@ -101,27 +98,17 @@ export default function SliderPlayers() {
         className="swiper-button-next"
         style={customStyles.swiperButtonNext}
       ></div>
-      {jugadores.map((jugador, index) => (
+      {Players.map((player, index) => (
         <SwiperSlide key={index} virtualIndex={index} className="player">
-          {({ isActive }) => (
-            <div>Current slide is {isActive ? "active" : "not active"}</div>
-          )}
-          {jugador.imagenJugador && jugador.imagenJugador.asset && (
-            <img
-              src={urlFor(jugador.imagenJugador).url()}
-              alt={jugador.nombre}
-            />
-          )}
-          <p>{jugador.nombre}</p>
+          <img src={player.image} alt={`Foto de ${player.name}`} className="player-image"/>
+          <p>{player.name}</p>
           <div className="player-overlay">
-            {jugador.imagenEscudo && jugador.imagenEscudo.asset && (
-              <img
-                src={urlFor(jugador.imagenEscudo).url()}
-                alt={jugador.nombre}
-                className="escudo"
-              />
-            )}
-            <PlayerSocialLinks player={jugador} />
+            <img
+              src={player.team}
+              alt={`Escudo de ${player.team}`}
+              className="escudo"
+            />
+            <PlayerSocialLinks player={player} />
           </div>
         </SwiperSlide>
       ))}
