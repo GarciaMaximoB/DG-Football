@@ -445,7 +445,7 @@
 }
 
 .swiper-slide-active:hover .player-overlay {
-  opacity: 1; /* Mostrar overlay al hacer hover */
+  opacity: 1;
   transform: scale(1);
   transition: all ease 0.5s;
 }

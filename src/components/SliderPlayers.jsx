@@ -1,5 +1,5 @@
 import { Navigation, Pagination, A11y, EffectCoverflow } from "swiper/modules";
-import { Players } from "./Players";
+// import { Players } from "./Players";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,7 +17,6 @@ const customStyles = {
     color: "#e7c4a2",
   },
 };
-
 const PlayerSocialLinks = ({ player }) => {
   const { fields } = player;
   return (
@@ -58,37 +57,15 @@ export default function SliderPlayers() {
   useEffect(() => {
     const getPlayers = async () => {
       const fetchedPlayers = await fetchPlayers();
-      setPlayers(fetchedPlayers);
+      const sortedPlayers = fetchedPlayers.sort(
+        (a, b) => a.fields.orden - b.fields.orden
+      );
+      setPlayers(sortedPlayers);
     };
     getPlayers();
   }, []);
-  // const [jugadores, setJugadores] = useState([]);
-
-  // useEffect(() => {
-  //   client
-  //     .fetch(
-  //       '*[_type == "jugador"] | order(orden asc){orden, nombre, imagenJugador, imagenEscudo, soccerway, transfermarkt, youtube, wyscout}'
-  //     )
-  //     .then((data) => setJugadores(data))
-  //     .catch(console.error);
-  // }, []);
 
   return (
-    // <Swiper spaceBetween={50} slidesPerView={3}>
-    //   {players.map((player) => (
-    //     <SwiperSlide key={player.sys.id}>
-    //       <div>
-    //         <h2>{player.fields.nombre}</h2>
-    //         <img
-    //           src={player.fields.imagen.fields.file.url}
-    //           alt={player.fields.nombre}
-    //           style={{ width: "100%" }}
-    //         />
-    //         <p>{player.fields.position}</p>
-    //       </div>
-    //     </SwiperSlide>
-    //   ))}
-    // </Swiper>
     <Swiper
       className="myCustomSwiper"
       modules={[Navigation, Pagination, A11y, EffectCoverflow]}
@@ -116,14 +93,14 @@ export default function SliderPlayers() {
         },
         1024: {
           slidesPerView: 3,
-          spaceBetween: 100,
+          spaceBetween: 50,
         },
       }}
       centeredSlides={true}
       watchSlidesProgress={true}
       watchSlidesVisibility={true}
-      observer={true} // Activa la observación de cambios en Swiper
-      observeParents={true} // Observa cambios en el contenedor de Swiper
+      observer={true}
+      observeParents={true}
       resizeObserver={true}
     >
       <div
