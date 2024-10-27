@@ -21,30 +21,21 @@ const PlayerSocialLinks = ({ player }) => {
   const { fields } = player;
   return (
     <div className="player-social">
-      {fields.transferMarkt && (
-        <a
-          href={fields.transferMarkt}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          TransferMarkt
-        </a>
-      )}
-      {fields.soccerway && (
-        <a href={fields.soccerway} target="_blank" rel="noopener noreferrer">
-          Soccerway
-        </a>
-      )}
-      {fields.youtube && (
-        <a href={fields.youtube} target="_blank" rel="noopener noreferrer">
-          Youtube
-        </a>
-      )}
-      {fields.wyscout && (
-        <a href={fields.wyscout} target="_blank" rel="noopener noreferrer">
-          Wyscout
-        </a>
-      )}
+      <a href={fields.transferMarkt} target="_blank" rel="noopener noreferrer">
+        TransferMarkt
+      </a>
+
+      <a href={fields.soccerway} target="_blank" rel="noopener noreferrer">
+        Soccerway
+      </a>
+
+      <a href={fields.youtube} target="_blank" rel="noopener noreferrer">
+        Youtube
+      </a>
+
+      <a href={fields.wyscout} target="_blank" rel="noopener noreferrer">
+        Wyscout
+      </a>
     </div>
   );
 };
