@@ -1071,6 +1071,7 @@
   .redes a img {
     width: 25px;
   }
+
   /*ABOUT PAGE*/
   .about-section {
     padding: 70px 0;
@@ -1160,7 +1161,9 @@
 
   .players-section {
     margin-top: 150px;
-    height: 100vh;
+    height: 100%;
+    padding: 0px 0px 100px 0px;
+    min-height: 100vh;
   }
 
   .players-section h1 {
@@ -1171,8 +1174,10 @@
 
   .swiper-slide img {
     height: auto;
-    width: 45vh;
+    height: 50vh;
+    width: auto;
   }
+
   .swiper-slide p {
     font-size: 28px;
     text-align: center;
