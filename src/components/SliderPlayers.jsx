@@ -43,8 +43,6 @@ const PlayerSocialLinks = ({ player }) => {
 export default function SliderPlayers() {
   const [players, setPlayers] = useState([]);
 
-  console.log(window.innerWidth);
-
   useEffect(() => {
     const getPlayers = async () => {
       const fetchedPlayers = await fetchPlayers();
